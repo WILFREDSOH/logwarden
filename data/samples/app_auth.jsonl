@@ -1,0 +1,543 @@
+{"ts": "2026-10-12T08:55:07Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T09:06:07Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-12T09:45:25Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-12T09:45:40Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T09:48:40Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/tickets"}
+{"ts": "2026-10-12T09:52:07Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T10:16:08Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T10:44:40Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T10:52:08Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/tickets"}
+{"ts": "2026-10-12T12:42:31Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-12T12:46:08Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T12:51:31Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-12T13:01:37Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T13:39:37Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-12T13:43:37Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T13:48:10Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-12T14:16:59Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-12T14:22:10Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/home"}
+{"ts": "2026-10-12T14:24:38Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T14:25:31Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-12T14:26:29Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-12T14:30:29Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/home"}
+{"ts": "2026-10-12T14:46:59Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/tickets"}
+{"ts": "2026-10-12T14:58:38Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/tickets"}
+{"ts": "2026-10-12T15:07:38Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T15:20:59Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-12T15:22:29Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-12T15:25:59Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/home"}
+{"ts": "2026-10-12T15:30:13Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-12T15:34:13Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-12T15:51:10Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-12T15:51:26Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-12T15:57:33Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T15:58:26Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-12T16:10:16Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T16:13:33Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-12T16:42:45Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-12T16:45:59Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-12T16:48:46Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T16:49:16Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-12T16:54:33Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T16:55:45Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/tickets"}
+{"ts": "2026-10-12T16:58:54Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-12T17:02:54Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/home"}
+{"ts": "2026-10-12T17:04:43Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-12T17:08:46Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-12T17:25:23Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T17:30:43Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-12T17:34:23Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-12T17:35:51Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "192.0.2.20", "reason": "bad_password"}
+{"ts": "2026-10-12T17:36:06Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-12T17:38:02Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-12T17:45:16Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T17:47:04Z", "app": "intranet", "event": "login_failed", "user": "grace", "ip": "192.0.2.16", "reason": "bad_password"}
+{"ts": "2026-10-12T17:47:19Z", "app": "intranet", "event": "login_failed", "user": "grace", "ip": "192.0.2.16", "reason": "bad_password"}
+{"ts": "2026-10-12T17:47:34Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-12T17:48:13Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-12T17:51:34Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/home"}
+{"ts": "2026-10-12T17:58:59Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-12T18:02:26Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-12T18:05:02Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/tickets"}
+{"ts": "2026-10-12T18:09:06Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-12T18:18:45Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-12T18:19:53Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-12T18:26:54Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-12T18:29:23Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T18:34:38Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "192.0.2.14", "reason": "bad_password"}
+{"ts": "2026-10-12T18:34:53Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-12T18:45:20Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-12T18:46:07Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T18:48:43Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-12T18:50:06Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-12T18:50:53Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-12T18:58:53Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/wiki"}
+{"ts": "2026-10-12T19:04:46Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-12T19:11:20Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/wiki"}
+{"ts": "2026-10-12T19:21:07Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/tickets"}
+{"ts": "2026-10-12T19:25:02Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-12T19:39:53Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-12T20:30:34Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-12T20:42:20Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-12T20:54:07Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-12T20:59:53Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T08:31:54Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T09:03:54Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/wiki"}
+{"ts": "2026-10-13T09:37:44Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-13T09:53:44Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-13T10:19:06Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-13T10:39:06Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/hr"}
+{"ts": "2026-10-13T10:42:54Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T10:46:33Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T10:47:55Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T10:55:29Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T11:00:00Z", "event": "login_fail
+{"ts": "13/10/2026 11:00", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T11:04:33Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/hr"}
+{"ts": "2026-10-13T11:04:55Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-13T11:05:00Z", "app": "intranet", "event": "login_failed", "user": "frank", "ip": "192.0.2.15", "reason": "bad_password", "password": "not-a-real-password"}
+{"ts": "2026-10-13T11:11:51Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T11:12:29Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/hr"}
+{"ts": "2026-10-13T11:29:20Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T11:35:44Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-13T11:41:04Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T11:44:04Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/home"}
+{"ts": "2026-10-13T11:45:51Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-13T11:53:01Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T11:54:20Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/tickets"}
+{"ts": "2026-10-13T12:04:51Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T12:09:01Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/wiki"}
+{"ts": "2026-10-13T12:32:19Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-13T12:32:42Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-13T12:38:55Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T12:41:06Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-13T12:53:05Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T12:53:19Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-13T12:54:42Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/home"}
+{"ts": "2026-10-13T12:56:28Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T12:59:29Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T13:20:57Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T13:25:04Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T13:26:28Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/hr"}
+{"ts": "2026-10-13T13:26:33Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T13:27:04Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-13T13:28:05Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/home"}
+{"ts": "2026-10-13T13:29:57Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/wiki"}
+{"ts": "2026-10-13T13:34:29Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T13:48:29Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-13T13:49:04Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/tickets"}
+{"ts": "2026-10-13T13:57:20Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T14:13:42Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-13T14:28:19Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-13T14:35:01Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T14:39:04Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-13T14:44:09Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T14:49:09Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-13T14:52:46Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T15:00:57Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T15:03:05Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-13T15:03:28Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T15:06:27Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T15:13:46Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/wiki"}
+{"ts": "2026-10-13T15:14:17Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T15:16:17Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/hr"}
+{"ts": "2026-10-13T15:25:15Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T15:26:15Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/home"}
+{"ts": "2026-10-13T15:36:27Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/wiki"}
+{"ts": "2026-10-13T15:54:29Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T15:55:46Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T16:08:12Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-13T16:15:58Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T16:27:42Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-13T16:33:12Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/wiki"}
+{"ts": "2026-10-13T16:45:58Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-13T17:00:42Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/tickets"}
+{"ts": "2026-10-13T17:09:09Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T17:11:42Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-13T17:13:29Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-13T17:21:17Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T17:34:01Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T17:37:29Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/wiki"}
+{"ts": "2026-10-13T17:38:27Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-13T17:44:01Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T17:54:15Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T18:06:12Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-13T18:12:01Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/home"}
+{"ts": "2026-10-13T18:15:17Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T18:19:14Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-13T18:21:01Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-13T18:23:29Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-13T18:29:14Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/home"}
+{"ts": "2026-10-13T18:33:35Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T18:34:17Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/wiki"}
+{"ts": "2026-10-13T18:36:01Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T18:38:51Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-13T18:43:51Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T18:54:51Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/hr"}
+{"ts": "2026-10-13T18:54:58Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-13T19:02:35Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-13T19:11:14Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-13T19:15:51Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-13T19:56:51Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-13T20:05:17Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T20:27:01Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-13T20:47:51Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-13T21:08:35Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T08:13:17Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T08:32:17Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-14T08:53:42Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T08:54:42Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-14T09:01:40Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T09:15:24Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T09:17:40Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-14T09:17:49Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-14T09:39:55Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T09:41:53Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T09:44:49Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/tickets"}
+{"ts": "2026-10-14T09:48:40Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T09:52:24Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/tickets"}
+{"ts": "2026-10-14T09:55:40Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/hr"}
+{"ts": "2026-10-14T09:55:55Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/hr"}
+{"ts": "2026-10-14T10:00:53Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/tickets"}
+{"ts": "2026-10-14T10:15:33Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T10:21:26Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-14T10:27:33Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/wiki"}
+{"ts": "2026-10-14T10:32:37Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-14T10:39:37Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/hr"}
+{"ts": "2026-10-14T10:40:26Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/hr"}
+{"ts": "2026-10-14T10:56:55Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T10:58:17Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T11:01:40Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T11:11:24Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T11:11:26Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-14T11:11:40Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T11:29:40Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T11:38:37Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-14T11:40:33Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T11:40:43Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T11:41:42Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T11:46:40Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/home"}
+{"ts": "2026-10-14T11:55:43Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/home"}
+{"ts": "2026-10-14T12:07:49Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-14T12:08:53Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T12:21:39Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T12:27:39Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/tickets"}
+{"ts": "2026-10-14T12:43:34Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T12:49:51Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T12:49:58Z", "app": "intranet", "event": "login_failed", "user": "heidi", "ip": "192.0.2.17", "reason": "bad_password"}
+{"ts": "2026-10-14T12:50:13Z", "app": "intranet", "event": "login_failed", "user": "heidi", "ip": "192.0.2.17", "reason": "bad_password"}
+{"ts": "2026-10-14T12:50:28Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T12:52:00Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-14T12:56:46Z", "app": "intranet", "event": "login_failed", "user": "frank", "ip": "192.0.2.15", "reason": "bad_password"}
+{"ts": "2026-10-14T12:57:01Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T12:59:28Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-14T13:12:00Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-14T13:12:34Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/tickets"}
+{"ts": "2026-10-14T13:12:51Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/wiki"}
+{"ts": "2026-10-14T13:16:01Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/tickets"}
+{"ts": "2026-10-14T13:51:07Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T13:56:07Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/wiki"}
+{"ts": "2026-10-14T14:09:40Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T14:11:00Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-14T14:11:12Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T14:12:43Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T14:18:51Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T14:20:40Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T14:40:34Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T14:46:12Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-14T14:46:28Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T14:52:40Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/home"}
+{"ts": "2026-10-14T15:05:20Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-14T15:07:29Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T15:13:01Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T15:13:20Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/hr"}
+{"ts": "2026-10-14T15:18:39Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T15:18:40Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-14T15:29:07Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T15:30:15Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T15:33:29Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/tickets"}
+{"ts": "2026-10-14T15:34:30Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-14T15:40:15Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-14T16:00:35Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T16:10:30Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/hr"}
+{"ts": "2026-10-14T16:15:35Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/home"}
+{"ts": "2026-10-14T16:31:28Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T16:34:28Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-14T16:58:14Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "192.0.2.14", "reason": "bad_password"}
+{"ts": "2026-10-14T16:58:17Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T16:58:29Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-14T16:59:15Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T17:02:48Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T17:07:12Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T17:15:17Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/hr"}
+{"ts": "2026-10-14T17:16:01Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T17:16:43Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T17:25:29Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-14T17:25:43Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-14T17:33:48Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-14T17:53:01Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/home"}
+{"ts": "2026-10-14T17:56:29Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T17:57:20Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-14T17:58:29Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-14T18:07:43Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-14T18:11:30Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-14T18:27:44Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T18:34:28Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T18:39:35Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-14T18:46:43Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T18:47:44Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/wiki"}
+{"ts": "2026-10-14T18:54:17Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T18:54:48Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T19:05:01Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-14T19:22:43Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-14T19:50:43Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-14T20:46:44Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-14T23:41:02Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:41:20Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:41:39Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:41:52Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:42:14Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:42:36Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:42:57Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:43:11Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:43:30Z", "app": "intranet", "event": "login_failed", "user": "admin", "ip": "203.0.113.45", "reason": "bad_password"}
+{"ts": "2026-10-14T23:43:41Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "203.0.113.45"}
+{"ts": "2026-10-14T23:45:41Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "203.0.113.45", "path": "/admin/users/export"}
+{"ts": "2026-10-15T08:11:17Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T08:11:55Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T08:18:38Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T08:25:38Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/wiki"}
+{"ts": "2026-10-15T08:27:01Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-15T08:31:17Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/tickets"}
+{"ts": "2026-10-15T08:32:01Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/tickets"}
+{"ts": "2026-10-15T08:37:55Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/home"}
+{"ts": "2026-10-15T09:00:30Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:04:52Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:12:33Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:19:20Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:26:33Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:28:55Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T09:32:25Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:38:38Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T09:39:24Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:45:32Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:50:11Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T09:54:41Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-15T09:55:26Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:00:08Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:05:48Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:10:51Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:15:17Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:16:12Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-15T10:21:17Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T10:22:02Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:26:12Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/home"}
+{"ts": "2026-10-15T10:28:04Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T10:29:08Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:30:41Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/wiki"}
+{"ts": "2026-10-15T10:34:08Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:39:34Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:47:04Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:48:04Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/tickets"}
+{"ts": "2026-10-15T10:52:52Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T10:57:01Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-15T10:59:12Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:05:53Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:10:51Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:15:32Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:21:06Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:23:04Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T11:26:04Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:27:37Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-15T11:31:30Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:33:37Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/hr"}
+{"ts": "2026-10-15T11:37:29Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:42:12Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-15T11:42:22Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:48:32Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T11:50:12Z", "app": "intranet", "event": "login_failed", "user": "erin", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T11:57:23Z", "app": "intranet", "event": "login_failed", "user": "bob", "ip": "198.51.100.77", "reason": "bad_password"}
+{"ts": "2026-10-15T12:16:32Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/home"}
+{"ts": "2026-10-15T12:19:37Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-15T12:19:52Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-15T12:20:07Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T12:24:26Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T12:25:41Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-15T12:32:07Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-15T12:36:14Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T13:03:26Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-15T13:05:37Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-15T13:06:35Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-15T13:12:14Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/home"}
+{"ts": "2026-10-15T13:14:21Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-15T13:19:21Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/home"}
+{"ts": "2026-10-15T13:22:46Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-15T13:25:35Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-15T13:27:37Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-15T13:28:37Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-15T13:32:04Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T13:32:46Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/wiki"}
+{"ts": "2026-10-15T13:41:32Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T13:45:05Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T13:53:03Z", "app": "intranet", "event": "login_failed", "user": "grace", "ip": "192.0.2.16", "reason": "bad_password"}
+{"ts": "2026-10-15T13:53:18Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T13:57:05Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-15T14:01:04Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/home"}
+{"ts": "2026-10-15T14:25:14Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T14:25:35Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-15T14:27:04Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T14:29:46Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-15T14:30:26Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T14:33:18Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/hr"}
+{"ts": "2026-10-15T14:37:33Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-15T14:37:48Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-15T14:38:03Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T14:38:07Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T14:52:03Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-15T15:26:37Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-15T15:28:33Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T15:29:05Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T15:39:33Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/tickets"}
+{"ts": "2026-10-15T15:56:14Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-15T16:10:21Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-15T16:24:03Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T16:26:14Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-15T16:32:18Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T16:35:53Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-15T16:58:53Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/home"}
+{"ts": "2026-10-15T17:25:45Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-15T17:30:32Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T17:34:32Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/hr"}
+{"ts": "2026-10-15T17:35:50Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T17:38:50Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/hr"}
+{"ts": "2026-10-15T17:44:33Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T17:44:45Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/home"}
+{"ts": "2026-10-15T18:23:14Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-15T18:30:14Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T18:31:29Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-15T18:37:32Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-15T18:43:37Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T18:53:14Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/tickets"}
+{"ts": "2026-10-15T18:57:53Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-15T19:03:37Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/home"}
+{"ts": "2026-10-15T19:04:50Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-15T19:09:29Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/hr"}
+{"ts": "2026-10-15T19:40:14Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-15T19:49:45Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-15T20:20:37Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-15T20:34:29Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-16T08:10:28Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T08:23:35Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T08:40:28Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/wiki"}
+{"ts": "2026-10-16T08:53:35Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-16T09:02:41Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T09:19:41Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/wiki"}
+{"ts": "2026-10-16T09:26:35Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T09:49:18Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T09:51:43Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T09:57:18Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/home"}
+{"ts": "2026-10-16T10:10:20Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T10:12:43Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/tickets"}
+{"ts": "2026-10-16T10:18:28Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T10:25:20Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/tickets"}
+{"ts": "2026-10-16T10:48:23Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T10:48:43Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T10:54:38Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T10:55:23Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-16T10:56:53Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T11:07:08Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T11:23:38Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/home"}
+{"ts": "2026-10-16T11:29:41Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T11:31:18Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T11:34:53Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/wiki"}
+{"ts": "2026-10-16T11:36:08Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-16T11:49:41Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-16T11:51:51Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T12:07:38Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T12:10:53Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T12:11:51Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/hr"}
+{"ts": "2026-10-16T12:12:02Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T12:14:41Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/home"}
+{"ts": "2026-10-16T12:15:02Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/tickets"}
+{"ts": "2026-10-16T12:22:55Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T12:25:45Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-16T12:27:00Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T12:30:23Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T12:43:00Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/hr"}
+{"ts": "2026-10-16T12:44:55Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/tickets"}
+{"ts": "2026-10-16T12:50:51Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T12:54:05Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T12:59:45Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/hr"}
+{"ts": "2026-10-16T13:03:20Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T13:09:41Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-16T13:27:56Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T13:30:05Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/tickets"}
+{"ts": "2026-10-16T13:34:55Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T13:41:08Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T13:42:18Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T13:55:00Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T13:56:56Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/hr"}
+{"ts": "2026-10-16T14:07:05Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T14:12:02Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T14:21:18Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-16T14:32:58Z", "app": "intranet", "event": "login_success", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T14:40:50Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T14:40:58Z", "app": "intranet", "event": "page_view", "user": "grace", "ip": "192.0.2.16", "path": "/wiki"}
+{"ts": "2026-10-16T14:45:50Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/home"}
+{"ts": "2026-10-16T14:50:45Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-16T15:05:18Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T15:07:17Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T15:17:17Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/home"}
+{"ts": "2026-10-16T15:21:58Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-16T15:22:13Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-16T15:22:28Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T15:34:56Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T15:40:11Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T15:45:11Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/hr"}
+{"ts": "2026-10-16T16:00:17Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T16:02:28Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/hr"}
+{"ts": "2026-10-16T16:14:07Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T16:23:07Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-16T16:25:52Z", "app": "intranet", "event": "login_success", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T16:30:11Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T16:30:58Z", "app": "intranet", "event": "logout", "user": "grace", "ip": "192.0.2.16"}
+{"ts": "2026-10-16T16:34:18Z", "app": "intranet", "event": "login_success", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T16:42:52Z", "app": "intranet", "event": "page_view", "user": "bob", "ip": "192.0.2.11", "path": "/home"}
+{"ts": "2026-10-16T16:45:18Z", "app": "intranet", "event": "page_view", "user": "erin", "ip": "192.0.2.14", "path": "/wiki"}
+{"ts": "2026-10-16T17:04:08Z", "app": "intranet", "event": "login_success", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-16T17:09:08Z", "app": "intranet", "event": "page_view", "user": "frank", "ip": "192.0.2.15", "path": "/hr"}
+{"ts": "2026-10-16T17:09:20Z", "app": "intranet", "event": "login_success", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T17:13:28Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T17:28:50Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T17:30:20Z", "app": "intranet", "event": "page_view", "user": "admin", "ip": "192.0.2.20", "path": "/tickets"}
+{"ts": "2026-10-16T17:34:01Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T17:34:05Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T17:40:01Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T17:45:05Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/wiki"}
+{"ts": "2026-10-16T17:52:11Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T17:54:52Z", "app": "intranet", "event": "logout", "user": "bob", "ip": "192.0.2.11"}
+{"ts": "2026-10-16T18:11:01Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/wiki"}
+{"ts": "2026-10-16T18:13:11Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/home"}
+{"ts": "2026-10-16T18:15:01Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/tickets"}
+{"ts": "2026-10-16T18:28:23Z", "app": "intranet", "event": "login_success", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-16T18:33:23Z", "app": "intranet", "event": "page_view", "user": "dave", "ip": "192.0.2.13", "path": "/wiki"}
+{"ts": "2026-10-16T18:39:46Z", "app": "intranet", "event": "login_success", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T18:42:05Z", "app": "intranet", "event": "login_success", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T18:47:18Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T18:49:33Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-16T18:49:48Z", "app": "intranet", "event": "login_failed", "user": "carol", "ip": "192.0.2.12", "reason": "bad_password"}
+{"ts": "2026-10-16T18:50:03Z", "app": "intranet", "event": "login_success", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T18:51:01Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}
+{"ts": "2026-10-16T18:53:11Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T18:58:05Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T19:01:07Z", "app": "intranet", "event": "logout", "user": "erin", "ip": "192.0.2.14"}
+{"ts": "2026-10-16T19:01:46Z", "app": "intranet", "event": "page_view", "user": "heidi", "ip": "192.0.2.17", "path": "/home"}
+{"ts": "2026-10-16T19:06:05Z", "app": "intranet", "event": "page_view", "user": "alice", "ip": "192.0.2.10", "path": "/home"}
+{"ts": "2026-10-16T19:14:03Z", "app": "intranet", "event": "page_view", "user": "carol", "ip": "192.0.2.12", "path": "/wiki"}
+{"ts": "2026-10-16T19:27:46Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T19:32:20Z", "app": "intranet", "event": "logout", "user": "admin", "ip": "192.0.2.20"}
+{"ts": "2026-10-16T19:38:01Z", "app": "intranet", "event": "logout", "user": "heidi", "ip": "192.0.2.17"}
+{"ts": "2026-10-16T19:38:03Z", "app": "intranet", "event": "logout", "user": "carol", "ip": "192.0.2.12"}
+{"ts": "2026-10-16T19:44:08Z", "app": "intranet", "event": "logout", "user": "frank", "ip": "192.0.2.15"}
+{"ts": "2026-10-16T21:24:23Z", "app": "intranet", "event": "logout", "user": "dave", "ip": "192.0.2.13"}
+{"ts": "2026-10-16T21:37:05Z", "app": "intranet", "event": "logout", "user": "alice", "ip": "192.0.2.10"}

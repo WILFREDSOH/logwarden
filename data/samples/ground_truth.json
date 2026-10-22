@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "start_date": "2026-10-12",
+  "days": 5,
+  "year": 2026,
+  "scenarios": [
+    {
+      "name": "ssh_brute_force_root",
+      "source": "ssh",
+      "src_ip": "203.0.113.10",
+      "start": "2026-10-13T14:20:05+00:00",
+      "end": "2026-10-13T14:23:55+00:00",
+      "malicious": true,
+      "expected_rules": [
+        "LW-001"
+      ],
+      "description": "40 password guesses against root over SSH in about 4 minutes."
+    },
+    {
+      "name": "ssh_password_spray",
+      "source": "ssh",
+      "src_ip": "198.51.100.23",
+      "start": "2026-10-14T03:10:00+00:00",
+      "end": "2026-10-14T03:16:50+00:00",
+      "malicious": true,
+      "expected_rules": [
+        "LW-001",
+        "LW-002",
+        "LW-005"
+      ],
+      "description": "One attempt on each of 14 accounts (10 of them non-existent) within a few minutes."
+    },
+    {
+      "name": "webapp_admin_takeover",
+      "source": "webapp",
+      "src_ip": "203.0.113.45",
+      "start": "2026-10-14T23:41:02+00:00",
+      "end": "2026-10-14T23:43:41+00:00",
+      "malicious": true,
+      "expected_rules": [
+        "LW-001",
+        "LW-003",
+        "LW-004",
+        "LW-005"
+      ],
+      "description": "9 failed logins on the web app 'admin' account, then a success, at 23:41."
+    },
+    {
+      "name": "off_hours_login",
+      "source": "ssh",
+      "src_ip": "192.0.2.13",
+      "start": "2026-10-15T03:12:40+00:00",
+      "end": "2026-10-15T03:12:40+00:00",
+      "malicious": true,
+      "expected_rules": [
+        "LW-004"
+      ],
+      "description": "dave logs in over SSH at 03:12 from his usual workstation (insider or stolen session)."
+    },
+    {
+      "name": "low_and_slow_guessing",
+      "source": "webapp",
+      "src_ip": "198.51.100.77",
+      "start": "2026-10-15T09:00:30+00:00",
+      "end": "2026-10-15T12:04:19+00:00",
+      "malicious": true,
+      "expected_rules": [],
+      "description": "31 failures spread over 3 hours on 3 accounts: under every rule threshold."
+    }
+  ],
+  "background_ips": [
+    "198.51.100.164",
+    "198.51.100.193",
+    "198.51.100.155",
+    "198.51.100.152",
+    "198.51.100.204",
+    "198.51.100.165",
+    "198.51.100.228",
+    "198.51.100.213",
+    "198.51.100.245",
+    "198.51.100.239",
+    "198.51.100.196",
+    "198.51.100.161",
+    "198.51.100.186"
+  ],
+  "injected_quality_issues": {
+    "malformed_ssh": 2,
+    "duplicate_ssh": 1,
+    "malformed_webapp": 2,
+    "redacted_field": 1
+  }
+}

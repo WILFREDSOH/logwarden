@@ -1,0 +1,322 @@
+Oct 12 00:21:49 srv-prod-01 sshd[11589]: Invalid user oracle from 198.51.100.155 port 41351
+Oct 12 00:21:49 srv-prod-01 sshd[29956]: Failed password for invalid user oracle from 198.51.100.155 port 57056 ssh2
+Oct 12 02:00:01 srv-prod-01 sshd[19024]: Accepted publickey for svc_backup from 192.0.2.50 port 57067 ssh2
+Oct 12 02:00:01 srv-prod-01 sshd[17049]: pam_unix(sshd:session): session opened for user svc_backup(uid=1000) by (uid=0)
+Oct 12 02:00:01 srv-prod-01 sshd[19024]: Accepted publickey for svc_backup from 192.0.2.50 port 57067 ssh2
+Oct 12 03:47:35 srv-prod-01 sshd[40638]: Invalid user ubuntu from 198.51.100.164 port 42000
+Oct 12 03:47:35 srv-prod-01 sshd[48029]: Failed password for invalid user ubuntu from 198.51.100.164 port 39669 ssh2
+Oct 12 06:00:00 srv-prod-01 CRON[49265]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 06:15:00 srv-prod-01 CRON[63731]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 06:30:00 srv-prod-01 CRON[15935]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 06:43:40 srv-prod-01 sshd[17457]: Invalid user oracle from 198.51.100.193 port 48776
+Oct 12 06:43:40 srv-prod-01 sshd[4329]: Failed password for invalid user oracle from 198.51.100.193 port 60493 ssh2
+Oct 12 06:43:47 srv-prod-01 sshd[28759]: Invalid user test from 198.51.100.193 port 53552
+Oct 12 06:43:47 srv-prod-01 sshd[19132]: Failed password for invalid user test from 198.51.100.193 port 59944 ssh2
+Oct 12 07:00:00 srv-prod-01 CRON[49540]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 08:07:59 srv-prod-01 sshd[4796]: Accepted publickey for bob from 192.0.2.11 port 40614 ssh2
+Oct 12 08:07:59 srv-prod-01 sshd[16785]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 12 08:15:00 srv-prod-01 CRON[25898]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 09:00:00 srv-prod-01 CRON[28651]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 09:05:46 srv-prod-01 sshd[35911]: Accepted publickey for bob from 192.0.2.11 port 57691 ssh2
+Oct 12 09:05:46 srv-prod-01 sshd[51189]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 12 09:15:00 srv-prod-01 CRON[56541]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 09:26:46 srv-prod-01 sshd[44237]: Received disconnect from 192.0.2.11 port 36975:11: disconnected by user
+Oct 12 09:56:15 srv-prod-01 sshd[55640]: Accepted publickey for admin from 192.0.2.20 port 47126 ssh2
+Oct 12 09:56:15 srv-prod-01 sshd[36600]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 12 10:00:00 srv-prod-01 CRON[7140]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 10:04:59 srv-prod-01 sshd[63059]: Received disconnect from 192.0.2.11 port 51359:11: disconnected by user
+Oct 12 11:00:00 srv-prod-01 CRON[34118]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 11:15:00 srv-prod-01 CRON[3847]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 11:31:15 srv-prod-01 sshd[41086]: Received disconnect from 192.0.2.20 port 42680:11: disconnected by user
+Oct 12 12:27:10 srv-prod-01 sshd[18261]: Accepted password for alice from 192.0.2.10 port 56350 ssh2
+Oct 12 12:27:10 srv-prod-01 sshd[64693]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 12 12:29:15 srv-prod-01 sshd[53954]: Accepted publickey for dave from 192.0.2.13 port 47288 ssh2
+Oct 12 12:29:15 srv-prod-01 sshd[57449]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 12 12:45:00 srv-prod-01 CRON[3103]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 13:36:10 srv-prod-01 sshd[12708]: Received disconnect from 192.0.2.10 port 57735:11: disconnected by user
+Oct 12 13:51:55 srv-prod-01 sshd[36146]: Accepted publickey for dave from 192.0.2.13 port 39000 ssh2
+Oct 12 13:51:55 srv-prod-01 sshd[30400]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 12 14:13:55 srv-prod-01 sshd[13025]: Received disconnect from 192.0.2.13 port 46592:11: disconnected by user
+Oct 12 14:23:15 srv-prod-01 sshd[7416]: Received disconnect from 192.0.2.13 port 50801:11: disconnected by user
+Oct 12 14:30:00 srv-prod-01 CRON[24283]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 15:30:00 srv-prod-01 CRON[18496]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 15:45:00 srv-prod-01 CRON[60843]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 18:00:00 srv-prod-01 CRON[57970]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 18:30:00 srv-prod-01 CRON[42613]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 18:33:00 srv-prod-01 sshd[62063]: Accepted password for admin from 192.0.2.20 port 42578 ssh2
+Oct 12 18:33:00 srv-prod-01 sshd[44475]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 12 18:51:00 srv-prod-01 sshd[18332]: Received disconnect from 192.0.2.20 port 37168:11: disconnected by user
+Oct 12 19:00:00 srv-prod-01 CRON[53810]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 19:30:00 srv-prod-01 CRON[48784]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 20:00:00 srv-prod-01 CRON[28696]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 12 20:30:00 srv-prod-01 CRON[31294]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 02:04:45 srv-prod-01 sshd[37759]: Accepted publickey for svc_backup from 192.0.2.50 port 46782 ssh2
+Oct 13 02:04:45 srv-prod-01 sshd[1633]: pam_unix(sshd:session): session opened for user svc_backup(uid=1000) by (uid=0)
+Oct 13 02:18:14 srv-prod-01 sshd[21067]: Invalid user oracle from 198.51.100.152 port 40740
+Oct 13 02:18:14 srv-prod-01 sshd[39112]: Failed password for invalid user oracle from 198.51.100.152 port 54524 ssh2
+Oct 13 02:18:21 srv-prod-01 sshd[37272]: Invalid user ubuntu from 198.51.100.152 port 48275
+Oct 13 02:18:21 srv-prod-01 sshd[23528]: Failed password for invalid user ubuntu from 198.51.100.152 port 50165 ssh2
+Oct 13 06:00:00 srv-prod-01 CRON[62934]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 06:30:00 srv-prod-01 CRON[58158]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 06:45:00 srv-prod-01 CRON[58477]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 07:30:00 srv-prod-01 CRON[31847]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 08:30:00 srv-prod-01 CRON[54515]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 08:45:00 srv-prod-01 CRON[64080]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+this line is not a syslog record
+Feb 30 10:00:02 srv-prod-01 sshd[999]: Failed password for bob from 192.0.2.11 port 50000 ssh2
+Oct 13 10:15:00 srv-prod-01 CRON[11649]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 10:45:00 srv-prod-01 CRON[40096]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 12:00:00 srv-prod-01 CRON[9352]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 13:00:00 srv-prod-01 CRON[24897]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 13:17:56 srv-prod-01 sshd[1665]: Accepted publickey for admin from 192.0.2.20 port 50980 ssh2
+Oct 13 13:17:56 srv-prod-01 sshd[34857]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 13 13:19:48 srv-prod-01 sshd[49989]: Accepted publickey for dave from 192.0.2.13 port 50404 ssh2
+Oct 13 13:19:48 srv-prod-01 sshd[49144]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 13 13:30:00 srv-prod-01 CRON[44255]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 13:46:56 srv-prod-01 sshd[16817]: Received disconnect from 192.0.2.20 port 35573:11: disconnected by user
+Oct 13 14:15:00 srv-prod-01 CRON[49271]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 14:20:05 srv-prod-01 sshd[27427]: Failed password for root from 203.0.113.10 port 57798 ssh2
+Oct 13 14:20:10 srv-prod-01 sshd[27252]: Failed password for root from 203.0.113.10 port 34250 ssh2
+Oct 13 14:20:13 srv-prod-01 sshd[37819]: Failed password for root from 203.0.113.10 port 51454 ssh2
+Oct 13 14:20:17 srv-prod-01 sshd[37256]: Failed password for root from 203.0.113.10 port 44647 ssh2
+Oct 13 14:20:22 srv-prod-01 sshd[26319]: Failed password for root from 203.0.113.10 port 35177 ssh2
+Oct 13 14:20:29 srv-prod-01 sshd[51095]: Failed password for root from 203.0.113.10 port 47525 ssh2
+Oct 13 14:20:36 srv-prod-01 sshd[55087]: Failed password for root from 203.0.113.10 port 41933 ssh2
+Oct 13 14:20:43 srv-prod-01 sshd[41045]: Failed password for root from 203.0.113.10 port 55063 ssh2
+Oct 13 14:20:46 srv-prod-01 sshd[64903]: Failed password for root from 203.0.113.10 port 36984 ssh2
+Oct 13 14:20:49 srv-prod-01 sshd[25457]: Failed password for root from 203.0.113.10 port 45675 ssh2
+Oct 13 14:20:54 srv-prod-01 sshd[62534]: Failed password for root from 203.0.113.10 port 51047 ssh2
+Oct 13 14:20:59 srv-prod-01 sshd[10454]: Failed password for root from 203.0.113.10 port 57506 ssh2
+Oct 13 14:21:03 srv-prod-01 sshd[34365]: Failed password for root from 203.0.113.10 port 52509 ssh2
+Oct 13 14:21:09 srv-prod-01 sshd[3638]: Failed password for root from 203.0.113.10 port 49154 ssh2
+Oct 13 14:21:12 srv-prod-01 sshd[9980]: Failed password for root from 203.0.113.10 port 34043 ssh2
+Oct 13 14:21:20 srv-prod-01 sshd[53688]: Failed password for root from 203.0.113.10 port 43681 ssh2
+Oct 13 14:21:26 srv-prod-01 sshd[30949]: Failed password for root from 203.0.113.10 port 49785 ssh2
+Oct 13 14:21:30 srv-prod-01 sshd[59532]: Failed password for root from 203.0.113.10 port 52633 ssh2
+Oct 13 14:21:37 srv-prod-01 sshd[22493]: Failed password for root from 203.0.113.10 port 37348 ssh2
+Oct 13 14:21:44 srv-prod-01 sshd[11649]: Failed password for root from 203.0.113.10 port 43205 ssh2
+Oct 13 14:21:50 srv-prod-01 sshd[49452]: Failed password for root from 203.0.113.10 port 52969 ssh2
+Oct 13 14:21:55 srv-prod-01 sshd[23044]: Failed password for root from 203.0.113.10 port 52223 ssh2
+Oct 13 14:22:02 srv-prod-01 sshd[34404]: Failed password for root from 203.0.113.10 port 59909 ssh2
+Oct 13 14:22:09 srv-prod-01 sshd[47447]: Failed password for root from 203.0.113.10 port 48819 ssh2
+Oct 13 14:22:16 srv-prod-01 sshd[32122]: Failed password for root from 203.0.113.10 port 42591 ssh2
+Oct 13 14:22:19 srv-prod-01 sshd[22708]: Failed password for root from 203.0.113.10 port 44838 ssh2
+Oct 13 14:22:27 srv-prod-01 sshd[28298]: Failed password for root from 203.0.113.10 port 36359 ssh2
+Oct 13 14:22:34 srv-prod-01 sshd[53216]: Failed password for root from 203.0.113.10 port 42849 ssh2
+Oct 13 14:22:42 srv-prod-01 sshd[42239]: Failed password for root from 203.0.113.10 port 55313 ssh2
+Oct 13 14:22:45 srv-prod-01 sshd[32102]: Failed password for root from 203.0.113.10 port 52327 ssh2
+Oct 13 14:22:50 srv-prod-01 sshd[52308]: Failed password for root from 203.0.113.10 port 54250 ssh2
+Oct 13 14:22:57 srv-prod-01 sshd[15912]: Failed password for root from 203.0.113.10 port 51695 ssh2
+Oct 13 14:23:05 srv-prod-01 sshd[39241]: Failed password for root from 203.0.113.10 port 34450 ssh2
+Oct 13 14:23:11 srv-prod-01 sshd[35356]: Failed password for root from 203.0.113.10 port 38355 ssh2
+Oct 13 14:23:19 srv-prod-01 sshd[41615]: Failed password for root from 203.0.113.10 port 56399 ssh2
+Oct 13 14:23:25 srv-prod-01 sshd[54848]: Failed password for root from 203.0.113.10 port 37610 ssh2
+Oct 13 14:23:33 srv-prod-01 sshd[3069]: Failed password for root from 203.0.113.10 port 40704 ssh2
+Oct 13 14:23:40 srv-prod-01 sshd[8202]: Failed password for root from 203.0.113.10 port 55722 ssh2
+Oct 13 14:23:44 srv-prod-01 sshd[29903]: Failed password for root from 203.0.113.10 port 33388 ssh2
+Oct 13 14:23:49 srv-prod-01 sshd[10924]: Failed password for root from 203.0.113.10 port 46490 ssh2
+Oct 13 14:30:00 srv-prod-01 CRON[22512]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 14:31:35 srv-prod-01 sshd[43329]: Accepted password for admin from 192.0.2.20 port 48368 ssh2
+Oct 13 14:31:35 srv-prod-01 sshd[47651]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 13 14:33:48 srv-prod-01 sshd[40534]: Received disconnect from 192.0.2.13 port 58978:11: disconnected by user
+Oct 13 15:28:28 srv-prod-01 sshd[53018]: Accepted password for alice from 192.0.2.10 port 48273 ssh2
+Oct 13 15:28:28 srv-prod-01 sshd[60059]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 13 15:30:00 srv-prod-01 CRON[5549]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 15:38:35 srv-prod-01 sshd[52965]: Received disconnect from 192.0.2.20 port 47453:11: disconnected by user
+Oct 13 15:39:54 srv-prod-01 sshd[59073]: Accepted publickey for bob from 192.0.2.11 port 46348 ssh2
+Oct 13 15:39:54 srv-prod-01 sshd[42272]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 13 16:53:00 srv-prod-01 sshd[52495]: Accepted publickey for alice from 192.0.2.10 port 46854 ssh2
+Oct 13 16:53:00 srv-prod-01 sshd[39009]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 13 16:57:54 srv-prod-01 sshd[48077]: Received disconnect from 192.0.2.11 port 39139:11: disconnected by user
+Oct 13 17:14:28 srv-prod-01 sshd[12120]: Received disconnect from 192.0.2.10 port 56883:11: disconnected by user
+Oct 13 17:30:00 srv-prod-01 CRON[43040]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 18:00:00 srv-prod-01 CRON[17353]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 18:15:00 srv-prod-01 sshd[22118]: Received disconnect from 192.0.2.10 port 54221:11: disconnected by user
+Oct 13 18:45:00 srv-prod-01 CRON[47450]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 20:15:00 srv-prod-01 CRON[11433]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 13 23:34:48 srv-prod-01 sshd[49405]: Invalid user test from 198.51.100.165 port 39858
+Oct 13 23:34:48 srv-prod-01 sshd[19120]: Failed password for invalid user test from 198.51.100.165 port 48634 ssh2
+Oct 13 23:35:21 srv-prod-01 sshd[18754]: Invalid user oracle from 198.51.100.204 port 47636
+Oct 13 23:35:21 srv-prod-01 sshd[17475]: Failed password for invalid user oracle from 198.51.100.204 port 42815 ssh2
+Oct 13 23:35:28 srv-prod-01 sshd[48270]: Invalid user test from 198.51.100.204 port 36721
+Oct 13 23:35:28 srv-prod-01 sshd[21679]: Failed password for invalid user test from 198.51.100.204 port 39078 ssh2
+Oct 14 02:04:48 srv-prod-01 sshd[40111]: Accepted publickey for svc_backup from 192.0.2.50 port 49959 ssh2
+Oct 14 02:04:48 srv-prod-01 sshd[19546]: pam_unix(sshd:session): session opened for user svc_backup(uid=1000) by (uid=0)
+Oct 14 03:06:15 srv-prod-01 sshd[25314]: Invalid user ubuntu from 198.51.100.213 port 47632
+Oct 14 03:06:15 srv-prod-01 sshd[63218]: Failed password for invalid user ubuntu from 198.51.100.213 port 54738 ssh2
+Oct 14 03:10:00 srv-prod-01 sshd[14362]: Failed password for admin from 198.51.100.23 port 55394 ssh2
+Oct 14 03:10:28 srv-prod-01 sshd[51788]: Failed password for alice from 198.51.100.23 port 49211 ssh2
+Oct 14 03:11:02 srv-prod-01 sshd[58200]: Invalid user test from 198.51.100.23 port 48221
+Oct 14 03:11:02 srv-prod-01 sshd[49223]: Failed password for invalid user test from 198.51.100.23 port 60567 ssh2
+Oct 14 03:11:40 srv-prod-01 sshd[47253]: Invalid user oracle from 198.51.100.23 port 34808
+Oct 14 03:11:40 srv-prod-01 sshd[34992]: Failed password for invalid user oracle from 198.51.100.23 port 37292 ssh2
+Oct 14 03:12:01 srv-prod-01 sshd[22302]: Failed password for bob from 198.51.100.23 port 51147 ssh2
+Oct 14 03:12:37 srv-prod-01 sshd[35437]: Invalid user guest from 198.51.100.23 port 48443
+Oct 14 03:12:37 srv-prod-01 sshd[21562]: Failed password for invalid user guest from 198.51.100.23 port 45115 ssh2
+Oct 14 03:12:57 srv-prod-01 sshd[60776]: Invalid user ubuntu from 198.51.100.23 port 47830
+Oct 14 03:12:57 srv-prod-01 sshd[23434]: Failed password for invalid user ubuntu from 198.51.100.23 port 50237 ssh2
+Oct 14 03:13:29 srv-prod-01 sshd[45293]: Invalid user postgres from 198.51.100.23 port 44377
+Oct 14 03:13:29 srv-prod-01 sshd[57862]: Failed password for invalid user postgres from 198.51.100.23 port 58064 ssh2
+Oct 14 03:14:07 srv-prod-01 sshd[43159]: Invalid user deploy from 198.51.100.23 port 55074
+Oct 14 03:14:07 srv-prod-01 sshd[46436]: Failed password for invalid user deploy from 198.51.100.23 port 59102 ssh2
+Oct 14 03:14:30 srv-prod-01 sshd[32731]: Invalid user git from 198.51.100.23 port 52758
+Oct 14 03:14:30 srv-prod-01 sshd[63740]: Failed password for invalid user git from 198.51.100.23 port 39068 ssh2
+Oct 14 03:14:52 srv-prod-01 sshd[37574]: Failed password for carol from 198.51.100.23 port 41910 ssh2
+Oct 14 03:15:16 srv-prod-01 sshd[62701]: Invalid user user from 198.51.100.23 port 40136
+Oct 14 03:15:16 srv-prod-01 sshd[51539]: Failed password for invalid user user from 198.51.100.23 port 42520 ssh2
+Oct 14 03:15:40 srv-prod-01 sshd[14584]: Invalid user pi from 198.51.100.23 port 55866
+Oct 14 03:15:40 srv-prod-01 sshd[47202]: Failed password for invalid user pi from 198.51.100.23 port 55385 ssh2
+Oct 14 03:16:10 srv-prod-01 sshd[32444]: Invalid user ftp from 198.51.100.23 port 43156
+Oct 14 03:16:10 srv-prod-01 sshd[37732]: Failed password for invalid user ftp from 198.51.100.23 port 44197 ssh2
+Oct 14 06:15:00 srv-prod-01 CRON[57473]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 06:45:00 srv-prod-01 CRON[19528]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 07:30:00 srv-prod-01 CRON[39569]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 07:41:04 srv-prod-01 sshd[43548]: Invalid user oracle from 198.51.100.228 port 42670
+Oct 14 07:41:04 srv-prod-01 sshd[8646]: Failed password for invalid user oracle from 198.51.100.228 port 46147 ssh2
+Oct 14 07:41:11 srv-prod-01 sshd[63014]: Invalid user test from 198.51.100.228 port 34253
+Oct 14 07:41:11 srv-prod-01 sshd[20946]: Failed password for invalid user test from 198.51.100.228 port 33987 ssh2
+Oct 14 08:00:00 srv-prod-01 CRON[24650]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 08:16:34 srv-prod-01 sshd[50087]: Accepted publickey for admin from 192.0.2.20 port 54815 ssh2
+Oct 14 08:16:34 srv-prod-01 sshd[45062]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 14 08:54:34 srv-prod-01 sshd[25970]: Received disconnect from 192.0.2.20 port 51922:11: disconnected by user
+Oct 14 09:00:00 srv-prod-01 CRON[1927]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 10:15:00 srv-prod-01 CRON[42251]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 11:00:00 srv-prod-01 CRON[3982]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 11:44:15 srv-prod-01 sshd[51826]: Accepted publickey for dave from 192.0.2.13 port 60817 ssh2
+Oct 14 11:44:15 srv-prod-01 sshd[27920]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 14 11:54:15 srv-prod-01 sshd[49804]: Received disconnect from 192.0.2.13 port 43194:11: disconnected by user
+Oct 14 12:15:00 srv-prod-01 CRON[54159]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 14:30:00 srv-prod-01 CRON[14829]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 15:00:00 srv-prod-01 CRON[57915]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 15:30:00 srv-prod-01 CRON[6320]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 15:45:58 srv-prod-01 sshd[52930]: Accepted publickey for dave from 192.0.2.13 port 54515 ssh2
+Oct 14 15:45:58 srv-prod-01 sshd[54788]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 14 16:15:00 srv-prod-01 CRON[51098]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 16:30:00 srv-prod-01 CRON[12391]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 17:00:00 srv-prod-01 CRON[1803]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 17:13:58 srv-prod-01 sshd[33461]: Received disconnect from 192.0.2.13 port 37752:11: disconnected by user
+Oct 14 17:27:40 srv-prod-01 sshd[23803]: Accepted publickey for alice from 192.0.2.10 port 48169 ssh2
+Oct 14 17:27:40 srv-prod-01 sshd[27761]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 14 18:14:40 srv-prod-01 sshd[44917]: Received disconnect from 192.0.2.10 port 43288:11: disconnected by user
+Oct 14 18:23:06 srv-prod-01 sshd[41602]: Accepted publickey for admin from 192.0.2.20 port 33588 ssh2
+Oct 14 18:23:06 srv-prod-01 sshd[58949]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 14 18:30:00 srv-prod-01 CRON[27772]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 18:55:34 srv-prod-01 sshd[34976]: Accepted publickey for bob from 192.0.2.11 port 38914 ssh2
+Oct 14 18:55:34 srv-prod-01 sshd[24709]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 14 19:39:06 srv-prod-01 sshd[60982]: Received disconnect from 192.0.2.20 port 43516:11: disconnected by user
+Oct 14 20:19:34 srv-prod-01 sshd[33669]: Received disconnect from 192.0.2.11 port 57555:11: disconnected by user
+Oct 14 20:45:00 srv-prod-01 CRON[11873]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 21:00:00 srv-prod-01 CRON[4367]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 21:30:00 srv-prod-01 CRON[16170]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 14 22:34:26 srv-prod-01 sshd[7489]: Invalid user ubuntu from 198.51.100.245 port 54228
+Oct 14 22:34:26 srv-prod-01 sshd[33069]: Failed password for invalid user ubuntu from 198.51.100.245 port 60086 ssh2
+Oct 15 02:04:26 srv-prod-01 sshd[3144]: Accepted publickey for svc_backup from 192.0.2.50 port 41934 ssh2
+Oct 15 02:04:26 srv-prod-01 sshd[46238]: pam_unix(sshd:session): session opened for user svc_backup(uid=1000) by (uid=0)
+Oct 15 03:12:40 srv-prod-01 sshd[63607]: Accepted password for dave from 192.0.2.13 port 42193 ssh2
+Oct 15 03:12:40 srv-prod-01 sshd[47801]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 15 07:45:00 srv-prod-01 CRON[32390]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 08:37:35 srv-prod-01 sshd[27922]: Accepted password for alice from 192.0.2.10 port 36773 ssh2
+Oct 15 08:37:35 srv-prod-01 sshd[24173]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 15 09:11:13 srv-prod-01 sshd[15846]: Invalid user ubuntu from 198.51.100.196 port 39059
+Oct 15 09:11:13 srv-prod-01 sshd[11154]: Failed password for invalid user ubuntu from 198.51.100.196 port 37275 ssh2
+Oct 15 09:11:20 srv-prod-01 sshd[56340]: Invalid user test from 198.51.100.196 port 42460
+Oct 15 09:11:20 srv-prod-01 sshd[7628]: Failed password for invalid user test from 198.51.100.196 port 58593 ssh2
+Oct 15 09:15:00 srv-prod-01 CRON[55382]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 09:20:27 srv-prod-01 sshd[63494]: Accepted publickey for alice from 192.0.2.10 port 45033 ssh2
+Oct 15 09:20:27 srv-prod-01 sshd[11003]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 15 09:30:00 srv-prod-01 CRON[18391]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 09:53:05 srv-prod-01 sshd[49417]: Accepted publickey for alice from 192.0.2.10 port 57166 ssh2
+Oct 15 09:53:05 srv-prod-01 sshd[25421]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 15 10:00:00 srv-prod-01 CRON[45936]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 10:30:00 srv-prod-01 CRON[49609]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 10:33:35 srv-prod-01 sshd[62677]: Received disconnect from 192.0.2.10 port 54569:11: disconnected by user
+Oct 15 10:45:00 srv-prod-01 CRON[47687]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 10:52:27 srv-prod-01 sshd[5399]: Received disconnect from 192.0.2.10 port 48308:11: disconnected by user
+Oct 15 11:15:00 srv-prod-01 CRON[15152]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 11:41:05 srv-prod-01 sshd[37462]: Received disconnect from 192.0.2.10 port 37031:11: disconnected by user
+Oct 15 12:30:00 srv-prod-01 CRON[5165]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 12:45:00 srv-prod-01 CRON[6294]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 12:46:20 srv-prod-01 sshd[6567]: Accepted password for bob from 192.0.2.11 port 52305 ssh2
+Oct 15 12:46:20 srv-prod-01 sshd[58890]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 15 12:57:20 srv-prod-01 sshd[11316]: Received disconnect from 192.0.2.11 port 37866:11: disconnected by user
+Oct 15 13:10:51 srv-prod-01 sshd[46194]: Accepted publickey for dave from 192.0.2.13 port 60031 ssh2
+Oct 15 13:10:51 srv-prod-01 sshd[61278]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 15 13:15:00 srv-prod-01 CRON[51749]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 14:00:00 srv-prod-01 CRON[19080]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 14:01:51 srv-prod-01 sshd[29620]: Received disconnect from 192.0.2.13 port 35655:11: disconnected by user
+Oct 15 14:15:00 srv-prod-01 CRON[60017]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 14:45:00 srv-prod-01 CRON[9270]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 15:00:00 srv-prod-01 CRON[9005]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 15:45:00 srv-prod-01 CRON[42489]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 16:15:00 srv-prod-01 CRON[10482]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 16:30:00 srv-prod-01 CRON[34019]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 17:03:43 srv-prod-01 sshd[28788]: Accepted publickey for bob from 192.0.2.11 port 54458 ssh2
+Oct 15 17:03:43 srv-prod-01 sshd[32828]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 15 17:30:00 srv-prod-01 CRON[41311]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 17:45:05 srv-prod-01 sshd[52882]: Accepted publickey for admin from 192.0.2.20 port 53853 ssh2
+Oct 15 17:45:05 srv-prod-01 sshd[22527]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 15 18:00:00 srv-prod-01 CRON[14900]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 18:01:05 srv-prod-01 sshd[28514]: Accepted publickey for bob from 192.0.2.11 port 45095 ssh2
+Oct 15 18:01:05 srv-prod-01 sshd[30730]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 15 18:25:43 srv-prod-01 sshd[28143]: Received disconnect from 192.0.2.11 port 47252:11: disconnected by user
+Oct 15 18:30:00 srv-prod-01 CRON[52329]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 18:49:05 srv-prod-01 sshd[25251]: Received disconnect from 192.0.2.11 port 37925:11: disconnected by user
+Oct 15 19:34:05 srv-prod-01 sshd[44916]: Received disconnect from 192.0.2.20 port 36955:11: disconnected by user
+Oct 15 20:15:00 srv-prod-01 CRON[57783]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 20:45:00 srv-prod-01 CRON[34131]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 21:00:00 srv-prod-01 CRON[52563]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 21:15:00 srv-prod-01 CRON[1973]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 15 23:43:58 srv-prod-01 sshd[28748]: Invalid user oracle from 198.51.100.239 port 54737
+Oct 15 23:43:58 srv-prod-01 sshd[24712]: Failed password for invalid user oracle from 198.51.100.239 port 49430 ssh2
+Oct 16 02:04:49 srv-prod-01 sshd[55730]: Accepted publickey for svc_backup from 192.0.2.50 port 50455 ssh2
+Oct 16 02:04:49 srv-prod-01 sshd[49407]: pam_unix(sshd:session): session opened for user svc_backup(uid=1000) by (uid=0)
+Oct 16 06:15:00 srv-prod-01 CRON[16674]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 07:00:00 srv-prod-01 CRON[23070]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 07:45:00 srv-prod-01 CRON[15715]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 08:22:50 srv-prod-01 sshd[44063]: Accepted publickey for alice from 192.0.2.10 port 56785 ssh2
+Oct 16 08:22:50 srv-prod-01 sshd[42173]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 16 08:30:00 srv-prod-01 CRON[56436]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 08:40:50 srv-prod-01 sshd[39135]: Received disconnect from 192.0.2.10 port 58048:11: disconnected by user
+Oct 16 08:45:00 srv-prod-01 CRON[62002]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 09:45:00 srv-prod-01 CRON[47838]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 10:30:00 srv-prod-01 CRON[6496]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 11:00:00 srv-prod-01 CRON[12851]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 11:48:10 srv-prod-01 sshd[33686]: Accepted password for admin from 192.0.2.20 port 48064 ssh2
+Oct 16 11:48:10 srv-prod-01 sshd[58611]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 16 12:30:00 srv-prod-01 CRON[60330]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 12:32:10 srv-prod-01 sshd[2518]: Received disconnect from 192.0.2.20 port 49065:11: disconnected by user
+Oct 16 12:32:29 srv-prod-01 sshd[24127]: Invalid user test from 198.51.100.161 port 51883
+Oct 16 12:32:29 srv-prod-01 sshd[4312]: Failed password for invalid user test from 198.51.100.161 port 34362 ssh2
+Oct 16 12:45:00 srv-prod-01 CRON[19800]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 13:08:02 srv-prod-01 sshd[43126]: Accepted publickey for alice from 192.0.2.10 port 59425 ssh2
+Oct 16 13:08:02 srv-prod-01 sshd[12474]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 16 14:20:41 srv-prod-01 sshd[49213]: Accepted publickey for dave from 192.0.2.13 port 33617 ssh2
+Oct 16 14:20:41 srv-prod-01 sshd[13192]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 16 14:55:39 srv-prod-01 sshd[22458]: Accepted publickey for admin from 192.0.2.20 port 59424 ssh2
+Oct 16 14:55:39 srv-prod-01 sshd[62194]: pam_unix(sshd:session): session opened for user admin(uid=1000) by (uid=0)
+Oct 16 14:59:02 srv-prod-01 sshd[45871]: Received disconnect from 192.0.2.10 port 58298:11: disconnected by user
+Oct 16 15:00:00 srv-prod-01 CRON[29683]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 15:15:00 srv-prod-01 CRON[26026]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 15:28:41 srv-prod-01 sshd[26361]: Received disconnect from 192.0.2.13 port 49733:11: disconnected by user
+Oct 16 15:30:00 srv-prod-01 CRON[60670]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 15:38:56 srv-prod-01 sshd[1535]: Invalid user ubuntu from 198.51.100.186 port 50354
+Oct 16 15:38:56 srv-prod-01 sshd[8044]: Failed password for invalid user ubuntu from 198.51.100.186 port 60528 ssh2
+Oct 16 15:39:03 srv-prod-01 sshd[58832]: Invalid user ubuntu from 198.51.100.186 port 37156
+Oct 16 15:39:03 srv-prod-01 sshd[48677]: Failed password for invalid user ubuntu from 198.51.100.186 port 41434 ssh2
+Oct 16 15:44:31 srv-prod-01 sshd[53504]: Accepted password for bob from 192.0.2.11 port 41507 ssh2
+Oct 16 15:44:31 srv-prod-01 sshd[6414]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 16 16:00:00 srv-prod-01 CRON[24874]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 16:07:16 srv-prod-01 sshd[15062]: Accepted password for dave from 192.0.2.13 port 47391 ssh2
+Oct 16 16:07:16 srv-prod-01 sshd[41099]: pam_unix(sshd:session): session opened for user dave(uid=1000) by (uid=0)
+Oct 16 16:13:39 srv-prod-01 sshd[21494]: Received disconnect from 192.0.2.20 port 56397:11: disconnected by user
+Oct 16 16:30:00 srv-prod-01 CRON[30565]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 16:48:16 srv-prod-01 sshd[61062]: Received disconnect from 192.0.2.13 port 55508:11: disconnected by user
+Oct 16 16:50:32 srv-prod-01 sshd[3853]: Accepted publickey for alice from 192.0.2.10 port 48173 ssh2
+Oct 16 16:50:32 srv-prod-01 sshd[42659]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 16 17:22:31 srv-prod-01 sshd[6172]: Received disconnect from 192.0.2.11 port 46678:11: disconnected by user
+Oct 16 17:44:32 srv-prod-01 sshd[17623]: Received disconnect from 192.0.2.10 port 45000:11: disconnected by user
+Oct 16 18:00:00 srv-prod-01 CRON[30111]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 18:15:00 srv-prod-01 CRON[14087]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 20:15:00 srv-prod-01 CRON[17384]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 20:45:00 srv-prod-01 CRON[15133]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 16 21:15:00 srv-prod-01 CRON[32495]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
