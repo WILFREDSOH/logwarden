@@ -4,7 +4,7 @@ from __future__ import annotations
 
 
 class LogWardenError(Exception):
-    def __init__(self, key: str, **params: object) -> None:
+    def __init__(self, key: str, /, **params: object) -> None:
         self.key = key
         self.params = params
         super().__init__(f"{key} {params}" if params else key)
