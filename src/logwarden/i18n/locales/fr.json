@@ -173,7 +173,7 @@
 
   "ui.title": "LogWarden",
   "ui.subtitle": "Détection explicable d'activités d'authentification suspectes",
-  "ui.database": "Base de données",
+  "ui.database": "Base de données : {name}",
   "ui.readonly": "Accès en lecture seule : le tableau de bord ne modifie jamais les données.",
   "ui.disclaimer": "Outil défensif et pédagogique. Les données de démonstration sont synthétiques.",
   "ui.tab_overview": "Vue d'ensemble",

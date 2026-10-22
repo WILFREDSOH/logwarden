@@ -295,6 +295,8 @@ def cmd_dashboard(args: argparse.Namespace, cfg: dict[str, Any], lang: str) -> i
         "true",
         "--browser.gatherUsageStats",
         "false",
+        "--client.toolbarMode",
+        "minimal",
     ]
     return subprocess.call(cmd, env=env)  # noqa: S603 - fixed argument list, no shell
 

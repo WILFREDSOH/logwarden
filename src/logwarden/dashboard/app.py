@@ -52,7 +52,7 @@ def sidebar() -> tuple[str, str]:
         horizontal=True,
     )
     db_path = os.environ.get("LOGWARDEN_DB", "logwarden.db")
-    st.sidebar.caption(f"{t('ui.database', lang)}: `{Path(db_path).name}`")
+    st.sidebar.caption(t("ui.database", lang, name=Path(db_path).name))
     st.sidebar.caption(t("ui.readonly", lang))
     st.sidebar.divider()
     st.sidebar.caption(t("ui.disclaimer", lang))

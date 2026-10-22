@@ -173,7 +173,7 @@
 
   "ui.title": "LogWarden",
   "ui.subtitle": "Explainable detection of suspicious authentication activity",
-  "ui.database": "Database",
+  "ui.database": "Database: {name}",
   "ui.readonly": "Read-only access: the dashboard never modifies data.",
   "ui.disclaimer": "Defensive and educational tool. Demo data is synthetic.",
   "ui.tab_overview": "Overview",
