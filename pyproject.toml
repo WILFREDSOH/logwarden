@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logwarden"
+version = "1.0.0"
+description = "Local, explainable detection of suspicious authentication activity in Linux/SSH and web application logs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Wilfried" }]
+keywords = ["security", "blue-team", "log-analysis", "detection", "soc"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Environment :: Console",
+]
+# Core pipeline (ingest -> detect -> store -> report) only needs matplotlib.
+dependencies = ["matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+ml = ["scikit-learn>=1.4,<2", "numpy>=1.26"]
+dashboard = ["streamlit>=1.37,<2", "pandas>=2.1"]
+dev = ["pytest>=8", "ruff>=0.5"]
+all = ["logwarden[ml,dashboard,dev]"]
+
+[project.scripts]
+logwarden = "logwarden.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+logwarden = ["default_config.toml", "i18n/locales/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101"]  # assert is fine in tests
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S"]
+"src/logwarden/synth/**" = ["S311"]  # non-crypto RNG is intended for synthetic data

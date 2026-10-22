@@ -1,0 +1,57 @@
+# LogWarden default configuration.
+# Copy this file, edit it, and pass it with `logwarden --config my.toml ...`.
+# Any key you omit keeps its default value.
+
+[ingestion]
+max_file_size_mb = 50        # files larger than this are refused
+max_line_length = 8192       # longer lines are counted as malformed
+raw_max_chars = 500          # stored copy of each line is truncated to this size
+# Keys removed from JSON log records before they are stored (sensitive data).
+redacted_fields = ["password", "passwd", "pwd", "token", "secret", "api_key", "authorization", "cookie", "session"]
+
+[scoring]
+privileged_accounts = ["root", "admin", "administrator"]
+privileged_bonus = 15        # target is a privileged account
+success_bonus = 20           # a successful login is part of the evidence
+# Volume bonus: +5 at 2x the rule threshold, +10 at 4x, +15 at 8x.
+volume_steps = [2, 4, 8]
+volume_points = 5
+
+[rules.LW-001]               # brute force: many failures from one IP
+enabled = true
+threshold = 5
+window_minutes = 5
+base_score = 40
+
+[rules.LW-002]               # password spraying: one IP, many accounts
+enabled = true
+distinct_users = 4
+window_minutes = 10
+base_score = 55
+
+[rules.LW-003]               # success after repeated failures from the same IP
+enabled = true
+failures = 3
+window_minutes = 10
+base_score = 70
+
+[rules.LW-004]               # successful login outside business hours
+enabled = true
+business_start_hour = 7      # inclusive, local business time
+business_end_hour = 20       # exclusive
+weekends_are_off_hours = true
+timezone = "UTC"             # e.g. "Europe/Paris" (needs the system tz database)
+exempt_users = ["svc_backup"]  # service accounts expected to log in at night
+base_score = 25
+
+[rules.LW-005]               # IP with suspicious behaviour across the dataset
+enabled = true
+min_distinct_rules = 2
+invalid_user_threshold = 3
+base_score = 50
+
+[ml]
+window_minutes = 60          # feature aggregation window (per source IP)
+contamination_quantile = 0.01  # alarm threshold = 1st percentile of baseline scores
+n_estimators = 200
+random_state = 42
