@@ -12,7 +12,6 @@ Security choices:
 from __future__ import annotations
 
 import os
-import re
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -20,6 +19,7 @@ import pandas as pd
 import streamlit as st
 
 from logwarden.config import load_config
+from logwarden.dashboard import md_escape
 from logwarden.errors import LogWardenError
 from logwarden.i18n import SUPPORTED_LANGS, resolve_lang, t
 from logwarden.models import Severity
@@ -28,12 +28,6 @@ from logwarden.reporting.stats import summarize
 from logwarden.storage import Store
 
 LANG_NAMES = {"en": "English", "fr": "Français"}
-_MD_SPECIAL = re.compile(r"([\\`*_{}\[\]()#+\-.!|<>~$])")
-
-
-def md_escape(text: object) -> str:
-    """Escape Markdown so log-derived text is displayed literally."""
-    return _MD_SPECIAL.sub(r"\\\1", "" if text is None else str(text))
 
 
 @st.cache_data(show_spinner=False)
