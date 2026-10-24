@@ -13,7 +13,7 @@ et les tests, et entraîne-toi à modifier un seuil en direct.
 > calcul est détaillé, une explication en français ou en anglais et une action recommandée. Tout
 > est stocké dans SQLite, avec un rapport Markdown et un tableau de bord Streamlit local. J'ai
 > ajouté une Isolation Forest pour un cas précis, une attaque lente sous les seuils, et je l'ai
-> évaluée honnêtement : sur données synthétiques uniquement. Le projet a 379 tests automatisés,
+> évaluée honnêtement : sur données synthétiques uniquement. Le projet a 376 tests automatisés,
 > dont des tests de sécurité sur les entrées hostiles. »
 
 ## 2. Démonstration de 5 minutes
@@ -26,7 +26,7 @@ et les tests, et entraîne-toi à modifier un seuil en direct.
 | 2:00 | Onglet Alertes → alerte critique LW-003 | explication, détail du score 70+15+5, événements de preuve, action |
 | 3:00 | Basculer en anglais dans la barre latérale | i18n pensée dès le départ (clé + paramètres en base) |
 | 3:30 | Onglet Anomalies (ML) | l'attaque lente : aucune règle, 3 fenêtres signalées par le modèle ; « règles + ML » complémentaires |
-| 4:15 | Ouvrir `tests/unit/test_rule_lw001_brute_force.py` puis `pytest -q` | tests de bornes (fenêtre inclusive), 379 tests en ~17 s |
+| 4:15 | Ouvrir `tests/unit/test_rule_lw001_brute_force.py` puis `pytest -q` | tests de bornes (fenêtre inclusive), 376 tests en ~17 s |
 | 4:45 | Conclure sur les limites | données synthétiques, règles par IP, 2 formats |
 
 Prépare un plan B : les captures de `docs/images/` si l'ordinateur pose problème.
@@ -117,14 +117,14 @@ Commencer par une règle par compte visé, et évaluer sur un jeu public étique
 **CV (une ligne)**
 > LogWarden — outil Python de détection d'intrusions sur journaux d'authentification (SSH, web) :
 > 5 règles explicables avec score de risque, SQLite, tableau de bord Streamlit bilingue,
-> Isolation Forest expérimentale ; 379 tests pytest, CI GitHub Actions. Projet personnel, données synthétiques.
+> Isolation Forest expérimentale ; 376 tests pytest, CI GitHub Actions. Projet personnel, données synthétiques.
 
 **CV (version détaillée, 3 puces)**
 * Conçu un moteur de détection par règles (force brute, password spraying, succès après échecs,
   hors horaires, corrélation par IP) avec score de risque explicable et alertes bilingues.
 * Développé l'importation et la normalisation de journaux OpenSSH et JSON, robuste aux entrées
   mal formées et malveillantes (injections SQL/terminal/CSV, masquage de secrets).
-* Mis en place 379 tests automatisés (unitaires, intégration, interface), une CI multi-versions et
+* Mis en place 376 tests automatisés (unitaires, intégration, interface), une CI multi-versions et
   une évaluation honnête d'un modèle Isolation Forest face aux règles.
 
 **LinkedIn (publication)**
@@ -145,7 +145,7 @@ Commencer par une règle par compte visé, et évaluer sur un jeu public étique
 
 * **Cybersécurité / SOC** : insister sur les règles, la corrélation, les faux positifs, le modèle
   de menace, les recommandations d'action.
-* **QA / DevOps** : 379 tests, cas limites, test de mutation, matrice Python 3.11-3.13, lockfile,
+* **QA / DevOps** : 376 tests, cas limites, test de mutation, matrice Python 3.11-3.13, lockfile,
   CI, reproductibilité, Makefile.
 * **Systèmes et réseaux** : syslog, sshd/PAM, fuseaux horaires, adresses IPv4/IPv6, écoute locale,
   fail2ban comme réponse opérationnelle.

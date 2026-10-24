@@ -1,6 +1,5 @@
-# Keep the dashboard local-only and fully offline.
+# No telemetry. `logwarden dashboard` binds to 127.0.0.1 itself.
 [server]
-address = "127.0.0.1"
 headless = true
 
 [browser]

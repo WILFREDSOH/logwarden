@@ -8,9 +8,16 @@ transparent detection rules, scores each alert from 0 to 100, explains it in pla
 French, stores everything in SQLite and produces a report and a local dashboard. An optional
 Isolation Forest flags slow attacks that stay under the rule thresholds.
 
-> Defensive, educational project built as a student portfolio piece. All demo data is synthetic.
+> Defensive, educational project  All demo data is synthetic.
 
 ![Dashboard - alert details](docs/images/dashboard-alerts-en.png)
+
+## Try it
+
+* **Live demo** (no install): _link added after deployment_
+* **In your browser with GitHub Codespaces**: [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/WILFREDSOH/logwarden)
+  The environment installs itself and runs the demo; then type `logwarden dashboard` in its terminal.
+* **On your machine**: see [Quick start](#quick-start-linux--wsl-python--311) below.
 
 ## What it does
 
@@ -37,7 +44,7 @@ pip install -e ".[all]"          # core + ML + dashboard + test tools
 
 logwarden demo                   # generate data, ingest, detect, ML, reports (EN + FR)
 logwarden dashboard              # http://127.0.0.1:8501 (Ctrl+C to stop)
-pytest                           # 379 tests
+pytest                           # 376 tests
 ```
 
 For the exact versions that were tested: `pip install -r requirements-lock.txt && pip install -e . --no-deps`.
@@ -89,7 +96,7 @@ Example explanation (alert 1):
 
 ## Quality
 
-* **379 automated tests** (pytest): parsers and malformed input, empty/binary/oversized files,
+* **376 automated tests** (pytest): parsers and malformed input, empty/binary/oversized files,
   bad timestamps, year rollover, duplicates, each rule (positive / negative / boundary cases),
   scoring bands, config validation, SQLite errors (corrupted, read-only, rollback), i18n
   completeness, CSV/Markdown injection, ML determinism, end-to-end demo, CLI exit codes, and the

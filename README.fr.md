@@ -9,9 +9,16 @@ score de 0 à 100, l'explique en français ou en anglais, stocke le tout dans SQ
 rapport ainsi qu'un tableau de bord local. Une Isolation Forest optionnelle signale les attaques
 lentes qui restent sous les seuils des règles.
 
-> Projet défensif et pédagogique, réalisé pour un portfolio d'étudiant. Toutes les données de démonstration sont synthétiques.
+> Projet défensif et pédagogique,  Toutes les données de démonstration sont synthétiques.
 
 ![Tableau de bord - détail d'une alerte](docs/images/dashboard-alerts-fr.png)
+
+## Tester
+
+* **Démo en ligne** (sans installation) : _lien ajouté après le déploiement_
+* **Dans le navigateur avec GitHub Codespaces** : [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/WILFREDSOH/logwarden)
+  L'environnement s'installe seul et lance la démo ; tape ensuite `logwarden dashboard` dans son terminal.
+* **Sur ta machine** : voir la section « Installation et lancement » ci-dessous.
 
 ## Fonctionnalités
 
@@ -37,8 +44,7 @@ mkdir -p ~/projects
 git clone /mnt/c/Users/<toi>/Downloads/logwarden.bundle ~/projects/logwarden
 cd ~/projects/logwarden
 git log --oneline | head     # vérifie l'historique
-git remote remove origin     # l'archive n'est pas un dépôt distant : on la détache
-```
+git remote remove origin       
 
 `/mnt/c/...` est la façon dont WSL voit le disque `C:` de Windows. Remplace `<toi>` par ton nom
 d'utilisateur Windows. Travaille ensuite dans `~/projects/logwarden` (système de fichiers Linux,
@@ -55,7 +61,7 @@ pip install -e ".[all]"          # cœur + ML + tableau de bord + outils de test
 
 logwarden demo --lang fr         # génère les données, importe, détecte, ML, rapports (FR + EN)
 logwarden dashboard --lang fr    # ouvre http://127.0.0.1:8501 dans le navigateur Windows
-pytest                           # 379 tests
+pytest                           # 376 tests
 ```
 
 WSL2 relaie automatiquement `localhost` vers Windows : ouvre simplement
@@ -107,7 +113,7 @@ Jeu synthétique : 5 jours ouvrés, 865 lignes → 334 événements, 4 lignes ma
 
 ## Qualité
 
-* **379 tests automatisés** (pytest) : parseurs et entrées mal formées, fichiers vides / binaires /
+* **376 tests automatisés** (pytest) : parseurs et entrées mal formées, fichiers vides / binaires /
   trop gros, horodatages invalides, changement d'année, doublons, chaque règle (cas positif,
   négatif, limite), bornes de sévérité, validation de la configuration, erreurs SQLite (base
   corrompue, lecture seule, annulation de transaction), complétude des traductions, injections

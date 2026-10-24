@@ -52,10 +52,9 @@ def sidebar() -> tuple[str, str]:
         horizontal=True,
     )
     db_path = os.environ.get("LOGWARDEN_DB", "logwarden.db")
-    st.sidebar.caption(t("ui.database", lang, name=Path(db_path).name))
-    st.sidebar.caption(t("ui.readonly", lang))
-    st.sidebar.divider()
-    st.sidebar.caption(t("ui.disclaimer", lang))
+    from logwarden import __version__
+
+    st.sidebar.caption(f"LogWarden {__version__}")
     return lang, db_path
 
 
@@ -312,4 +311,5 @@ def main() -> None:
         quality_tab(data, lang)
 
 
-main()
+if __name__ == "__main__":
+    main()

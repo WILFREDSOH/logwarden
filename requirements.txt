@@ -1,0 +1,2 @@
+# Used by Streamlit Community Cloud to install the app.
+.[dashboard,ml]
