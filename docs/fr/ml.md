@@ -64,7 +64,7 @@ chevauche une attaque étiquetée de cette IP.
 * Le faux positif du modèle est une IP de bruit de fond (1 tentative sur un compte inexistant),
   sans doute un vrai scanner, mais étiquetée bénigne.
 
-## Limites — à lire avant de citer ces chiffres
+## Limites
 
 * **Synthétique et circulaire** : les attaques ont été conçues par la même personne que les
   variables. La précision et le rappel en conditions réelles sont inconnus et seraient certainement plus bas.
