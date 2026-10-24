@@ -14,7 +14,7 @@ Isolation Forest flags slow attacks that stay under the rule thresholds.
 
 ## Try it
 
-* **Live demo** (no install): _link added after deployment_
+* **Live demo** (no install):  https://logwarden-wilfredsoh.streamlit.app
 * **In your browser with GitHub Codespaces**: [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/WILFREDSOH/logwarden)
   The environment installs itself and runs the demo; then type `logwarden dashboard` in its terminal.
 * **On your machine**: see [Quick start](#quick-start-linux--wsl-python--311) below.

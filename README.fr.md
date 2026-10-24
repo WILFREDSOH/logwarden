@@ -15,7 +15,7 @@ lentes qui restent sous les seuils des règles.
 
 ## Tester
 
-* **Démo en ligne** (sans installation) : _lien ajouté après le déploiement_
+* **Démo en ligne** (sans installation) : https://logwarden-wilfredsoh.streamlit.app
 * **Dans le navigateur avec GitHub Codespaces** : [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/WILFREDSOH/logwarden)
   L'environnement s'installe seul et lance la démo ; tape ensuite `logwarden dashboard` dans son terminal.
 * **Sur ta machine** : voir la section « Installation et lancement » ci-dessous.
