@@ -35,7 +35,7 @@ Counts are `log1p`-scaled. No IP address or username is used as a feature.
 * **Explanation**: for each window, the 3 features furthest from the baseline median.
 * The model is refitted on each run (< 1 s) and never written to disk (no pickle).
 
-### A finding worth explaining in an interview
+### A finding 
 
 The first version fitted the forest on the baseline only. Result: the 40-failure brute force
 scored *less* anomalous than normal traffic. An Isolation Forest splits each feature between the
