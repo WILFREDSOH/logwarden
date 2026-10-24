@@ -38,7 +38,7 @@ Les comptages sont transformés par `log1p`. Ni l'IP ni le nom de compte ne sont
 * **Explication** : pour chaque fenêtre, les 3 variables les plus éloignées de la médiane de référence.
 * Le modèle est réentraîné à chaque exécution (< 1 s) et jamais écrit sur disque (pas de pickle).
 
-### Un constat à savoir expliquer en entretien
+### Un constat à savoir 
 
 La première version entraînait la forêt uniquement sur la référence. Résultat : la force brute à
 40 échecs paraissait *moins* anormale que du trafic normal. Une Isolation Forest découpe chaque
