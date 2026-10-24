@@ -61,7 +61,7 @@ attack of that IP.
 * The model's false positive is a background-noise IP (1 attempt on an unknown account), which
   is arguably a real scanner but labelled benign.
 
-## Limits — read before quoting these numbers
+## Limits 
 
 * **Synthetic and circular**: the attacks were designed by the same person who designed the
   features. Real-world precision/recall is unknown and would certainly be lower.
