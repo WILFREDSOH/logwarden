@@ -1,5 +1,7 @@
 """CLI behaviour: commands, exit codes and localised error messages."""
 
+from pathlib import Path
+
 import pytest
 
 from logwarden import __version__
@@ -79,3 +81,15 @@ def test_custom_config_changes_detection(tmp_path, logs, capsys):
     main(["ingest", *logs, "--db", db, "--year", "2026"])
     assert main(["detect", "--db", db, "--config", str(cfg)]) == 0
     assert "7 alerts" in capsys.readouterr().out  # the two LW-004 alerts are gone
+
+
+def test_distributed_attack_sample(tmp_path, capsys):
+    """8 IPs, one failure each on 'alice': only LW-006 sees it (per-IP rules stay silent)."""
+    db = str(tmp_path / "lw.db")
+    sample = Path(__file__).resolve().parents[2] / "data" / "samples" / "distributed_attack.log"
+    assert main(["ingest", str(sample), "--db", db, "--year", "2026"]) == 0
+    assert main(["detect", "--db", db]) == 0
+    assert main(["alerts", "--db", db]) == 0
+    out = capsys.readouterr().out
+    assert "1 alerts from 9 events" in out
+    assert "LW-006" in out and "LW-001" not in out and "LW-002" not in out

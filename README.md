@@ -24,7 +24,7 @@ Isolation Forest flags slow attacks that stay under the rule thresholds.
 | Step | Detail |
 |---|---|
 | **Ingest** | OpenSSH messages from `auth.log` (classic and RFC 3339 timestamps) and a JSON Lines web-app log. Bad lines are counted with a reason, never silently dropped; duplicates are ignored; secrets (`password`, `token`…) are redacted. |
-| **Detect** | LW-001 brute force · LW-002 password spraying · LW-003 success after failures · LW-004 off-hours login · LW-005 suspicious IP (correlation) |
+| **Detect** | LW-001 brute force · LW-002 password spraying · LW-003 success after failures · LW-004 off-hours login ·LW-005 suspicious IP (correlation) · LW-006 distributed attack |
 | **Score** | additive and explainable: rule base + privileged account + successful login + volume → low / medium / high / critical |
 | **Explain** | each alert lists the evidence events, a sentence, the score breakdown and a recommended action, in EN or FR |
 | **Store** | SQLite: events, alerts, links alert↔events, ingestion quality, ML scores |

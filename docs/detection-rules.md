@@ -81,6 +81,19 @@ Every alert stores its breakdown, e.g. `base +70 ; privileged account +15 ; high
   two alerts of the same rule count once.
 * **Tests**: `test_rule_lw005_suspicious_ip.py`.
 
+## LW-006 Distributed attack
+
+* **Behaviour**: many different source IPs fail on the same account (botnet). Per-IP rules
+  LW-001/LW-002 miss it because each IP only tries once or twice.
+* **Trigger**: ≥ `distinct_ips` (4) different source IPs failing on the same account within
+  `window_minutes` (10). Events are grouped by targeted account, not by IP.
+* **Score**: base 55 + privileged + volume (distinct IPs vs threshold).
+* **Edge cases**: many failures from a single IP are not distributed (LW-001); different
+  accounts are never combined; successes are ignored; users behind a shared NAT count as one IP.
+* **Tests**: `test_rule_lw006_distributed_attack.py` and `data/samples/distributed_attack.log`
+  (8 IPs, one failure each: only LW-006 fires).
+
+
 ## Engine
 
 `detection/__init__.py::run_detection` sorts events by time, runs LW-001..LW-004, then

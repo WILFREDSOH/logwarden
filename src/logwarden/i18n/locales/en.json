@@ -28,12 +28,17 @@
   "rule.LW-005.short": "Suspicious IP",
   "rule.LW-005.description": "A source IP that triggered several different rules or tried several non-existent accounts.",
   "rule.LW-005.action": "Block the IP at the perimeter and search other logs (firewall, web, VPN) for activity from it.",
+  "rule.LW-006.name": "Distributed attack",
+  "rule.LW-006.short": "Distributed",
+  "rule.LW-006.description": "Many different source IPs fail to log in on the same account in a short time window, typical of a botnet.",
+  "rule.LW-006.action": "Protect the targeted account (lock it temporarily, enforce MFA), check whether any login succeeded, and consider rate limiting per account rather than per IP.",
 
   "explain.LW-001": "{count} failed logins from {ip} in {duration} min (threshold: {threshold} within {window} min). Targeted accounts: {users}.",
   "explain.LW-002": "{ip} failed to log in on {n_users} different accounts ({count} attempts in {duration} min; threshold: {threshold} accounts within {window} min). Accounts: {users}.",
   "explain.LW-003": "Account '{user}' logged in successfully from {ip} at {time} right after {failures} failed attempts from that IP in the previous {window} min ({same_user} of them on this account). The password may have been guessed.",
   "explain.LW-004": "Account '{user}' logged in from {ip} on {day} at {times} ({tz}), outside business hours ({start}:00-{end}:00 on weekdays).",
   "explain.LW-005": "{ip} shows several suspicious behaviours: rules triggered: {rules}; attempts on non-existent accounts: {invalid} ({invalid_users}); failed logins: {failures}; successful logins: {successes} ({success_users}).",
+  "explain.LW-006": "Account '{user}' received {count} failed logins from {n_ips} different IPs in {duration} min (threshold: {threshold} IPs within {window} min). Source IPs: {ips}.",
 
   "score.base": "Rule base score",
   "score.privileged": "Privileged account",

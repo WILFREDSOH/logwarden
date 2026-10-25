@@ -25,7 +25,7 @@ lentes qui restent sous les seuils des règles.
 | Étape | Détail |
 |---|---|
 | **Importer** | messages OpenSSH d'`auth.log` (horodatages classiques et RFC 3339) et journal JSON Lines d'une application web. Les lignes invalides sont comptées avec leur motif, jamais ignorées en silence ; les doublons sont écartés ; les secrets (`password`, `token`…) sont masqués. |
-| **Détecter** | LW-001 force brute · LW-002 pulvérisation de mots de passe · LW-003 succès après échecs · LW-004 connexion hors horaires · LW-005 IP suspecte (corrélation) |
+| **Détecter** | LW-001 force brute · LW-002 pulvérisation de mots de passe · LW-003 succès après échecs · LW-004 connexion hors horaires · LW-005 IP suspecte (corrélation) · LW-006 attaque distribuée |
 | **Évaluer le risque** | score additif et explicable : base de la règle + compte privilégié + connexion réussie + volume → faible / moyenne / élevée / critique |
 | **Expliquer** | chaque alerte donne les événements de preuve, une phrase, le détail du score et une action recommandée, en FR ou EN |
 | **Stocker** | SQLite : événements, alertes, liens alerte↔événements, qualité d'importation, scores ML |

@@ -7,6 +7,7 @@ from typing import Any
 
 from logwarden.detection.base import Rule
 from logwarden.detection.rules.brute_force import BruteForceRule
+from logwarden.detection.rules.distributed_attack import DistributedAttackRule
 from logwarden.detection.rules.off_hours import OffHoursRule
 from logwarden.detection.rules.password_spray import PasswordSprayRule
 from logwarden.detection.rules.success_after_failures import SuccessAfterFailuresRule
@@ -18,6 +19,7 @@ RULE_CLASSES: tuple[type[Rule], ...] = (
     PasswordSprayRule,
     SuccessAfterFailuresRule,
     OffHoursRule,
+    DistributedAttackRule,
     SuspiciousIpRule,
 )
 RULE_IDS = tuple(cls.rule_id for cls in RULE_CLASSES)

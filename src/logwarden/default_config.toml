@@ -50,6 +50,12 @@ min_distinct_rules = 2
 invalid_user_threshold = 3
 base_score = 50
 
+[rules.LW-006]               # distributed attack: many IPs, one targeted account
+enabled = true 
+distinct_ips = 4
+window_minutes = 10
+base_score = 55
+
 [ml]
 window_minutes = 60          # feature aggregation window (per source IP)
 contamination_quantile = 0.01  # alarm threshold = 1st percentile of baseline scores

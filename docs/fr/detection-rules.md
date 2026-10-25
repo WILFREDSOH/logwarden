@@ -83,6 +83,20 @@ Chaque alerte conserve son détail, par ex. `base +70 ; compte privilégié +15 
   alertes ; deux alertes de la même règle comptent une seule fois.
 * **Tests** : `test_rule_lw005_suspicious_ip.py`.
 
+## LW-006 Attaque distribuée
+
+* **Comportement** : de nombreuses IP différentes échouent sur un même compte (botnet). Les règles
+  par IP LW-001/LW-002 ne la voient pas, car chaque IP n'essaie qu'une ou deux fois.
+* **Déclenchement** : ≥ `distinct_ips` (4) IP sources différentes en échec sur le même compte en
+  `window_minutes` (10). Les événements sont regroupés par compte visé, pas par IP.
+* **Score** : base 55 + compte privilégié + volume (IP distinctes / seuil).
+* **Cas limites** : beaucoup d'échecs depuis une seule IP ne sont pas une attaque distribuée
+  (LW-001) ; des comptes différents ne sont jamais cumulés ; les succès sont ignorés ; des
+  utilisateurs derrière une même IP (NAT) comptent pour une seule IP.
+* **Tests** : `test_rule_lw006_distributed_attack.py` et `data/samples/distributed_attack.log`
+  (8 IP, un échec chacune : seule LW-006 se déclenche).
+
+
 ## Moteur
 
 `detection/__init__.py::run_detection` trie les événements par date, exécute LW-001 à LW-004,

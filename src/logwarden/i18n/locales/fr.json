@@ -28,12 +28,17 @@
   "rule.LW-005.short": "IP suspecte",
   "rule.LW-005.description": "Une adresse IP source qui a déclenché plusieurs règles différentes ou essayé plusieurs comptes inexistants.",
   "rule.LW-005.action": "Bloquer l'adresse IP en périphérie et rechercher son activité dans les autres journaux (pare-feu, web, VPN).",
+  "rule.LW-006.name": "Attaque distribuée",
+  "rule.LW-006.short": "Distribuée",
+  "rule.LW-006.description": "De nombreuses adresses IP différentes échouent à se connecter sur un même compte en peu de temps, typique d'un botnet.",
+  "rule.LW-006.action": "Protéger le compte visé (verrouillage temporaire, authentification multifacteur), vérifier qu'aucune connexion n'a réussi et envisager une limitation par compte plutôt que par IP.",
 
   "explain.LW-001": "{count} échecs de connexion depuis {ip} en {duration} min (seuil : {threshold} en {window} min). Comptes visés : {users}.",
   "explain.LW-002": "{ip} a échoué à se connecter sur {n_users} comptes différents ({count} tentatives en {duration} min ; seuil : {threshold} comptes en {window} min). Comptes : {users}.",
   "explain.LW-003": "Le compte « {user} » s'est connecté avec succès depuis {ip} à {time}, juste après {failures} échecs depuis cette adresse au cours des {window} min précédentes (dont {same_user} sur ce compte). Le mot de passe a peut-être été deviné.",
   "explain.LW-004": "Le compte « {user} » s'est connecté depuis {ip} le {day} à {times} ({tz}), en dehors des heures ouvrées ({start} h-{end} h en semaine).",
   "explain.LW-005": "{ip} présente plusieurs comportements suspects : règles déclenchées : {rules} ; tentatives sur des comptes inexistants : {invalid} ({invalid_users}) ; échecs de connexion : {failures} ; connexions réussies : {successes} ({success_users}).",
+  "explain.LW-006": "Le compte « {user} » a subi {count} échecs de connexion depuis {n_ips} adresses IP différentes en {duration} min (seuil : {threshold} IP en {window} min). IP sources : {ips}.",
 
   "score.base": "Score de base de la règle",
   "score.privileged": "Compte privilégié",

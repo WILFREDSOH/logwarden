@@ -1,0 +1,9 @@
+Oct 14 15:02:07 srv-prod-01 sshd[4100]: Failed password for alice from 203.0.113.101 port 50100 ssh2
+Oct 14 15:02:44 srv-prod-01 sshd[4101]: Failed password for alice from 203.0.113.102 port 50101 ssh2
+Oct 14 15:03:21 srv-prod-01 sshd[4102]: Failed password for alice from 203.0.113.103 port 50102 ssh2
+Oct 14 15:03:58 srv-prod-01 sshd[4103]: Failed password for alice from 203.0.113.104 port 50103 ssh2
+Oct 14 15:04:35 srv-prod-01 sshd[4104]: Failed password for alice from 203.0.113.105 port 50104 ssh2
+Oct 14 15:05:12 srv-prod-01 sshd[4105]: Failed password for alice from 203.0.113.106 port 50105 ssh2
+Oct 14 15:05:49 srv-prod-01 sshd[4106]: Failed password for alice from 203.0.113.107 port 50106 ssh2
+Oct 14 15:06:26 srv-prod-01 sshd[4107]: Failed password for alice from 203.0.113.108 port 50107 ssh2
+Oct 14 15:11:07 srv-prod-01 sshd[4200]: Accepted publickey for bob from 192.0.2.11 port 50300 ssh2

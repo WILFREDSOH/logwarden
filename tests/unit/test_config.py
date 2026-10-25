@@ -13,7 +13,7 @@ def write(tmp_path, text):
 def test_defaults_are_valid():
     cfg = load_config()
     assert cfg["rules"]["LW-001"]["threshold"] == 5
-    assert set(cfg["rules"]) == {"LW-001", "LW-002", "LW-003", "LW-004", "LW-005"}
+    assert set(cfg["rules"]) == {"LW-001", "LW-002", "LW-003", "LW-004", "LW-005", "LW-006"}
 
 
 def test_partial_override_keeps_other_defaults(tmp_path):

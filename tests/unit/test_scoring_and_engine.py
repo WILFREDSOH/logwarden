@@ -59,4 +59,4 @@ def test_no_events_no_alerts(cfg):
 
 
 def test_rule_ids_are_unique():
-    assert len(set(RULE_IDS)) == len(RULE_IDS) == 5
+    assert len(set(RULE_IDS)) == len(RULE_IDS) == 6
