@@ -36,6 +36,7 @@ def test_dashboard_renders_in_english(monkeypatch, demo_db):
         "Events",
         "Anomalies (ML)",
         "Data quality",
+        "Analyze a file",
     ]
     assert at.metric[0].value == "334" and at.metric[1].value == "9"
     assert at.error  # critical alert details are shown in an error box
@@ -60,3 +61,11 @@ def test_missing_database_shows_an_error(monkeypatch, tmp_path):
     at = run_app(monkeypatch, tmp_path / "missing.db", lang="fr")
     assert not at.exception
     assert "Base de données introuvable" in at.error[0].value
+
+
+def test_sandbox_tab_without_upload(monkeypatch, demo_db):
+    at = run_app(monkeypatch, demo_db, lang="fr")
+    assert not at.exception
+    assert at.tabs[5].label == "Analyser un fichier"
+    assert any("Aucun fichier" in i.value for i in at.info)
+    assert any("N'envoyez pas" in w.value for w in at.warning)

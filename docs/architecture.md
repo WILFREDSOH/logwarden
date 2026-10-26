@@ -72,7 +72,7 @@ gives a consistent result.
 | One alert per *burst* (episode), not per event | avoids alert floods; matches SOC practice | one alert per window |
 | `argparse` CLI | standard library, enough for 8 sub-commands | click, typer |
 | Optional extras `[ml]`, `[dashboard]` | the core pipeline only needs matplotlib | everything mandatory |
-| Streamlit dashboard, read-only, no upload | quickest useful UI; minimal attack surface | Flask app, upload form |
+| Streamlit dashboard, read-only, sandbox upload analysed in memory | quickest useful UI; minimal attack surface | Flask app, upload form |
 | Isolation Forest refitted on each run, never pickled | loading pickles can execute code | saving a model file |
 | Synthetic data with a separate ground-truth file | reproducible, legal, measurable | public datasets (licences, no labels) |
 

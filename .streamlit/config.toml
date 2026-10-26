@@ -1,6 +1,7 @@
 # No telemetry. `logwarden dashboard` binds to 127.0.0.1 itself.
 [server]
 headless = true
+maxUploadSize = 2 # MB, sandbox uploads 
 
 [browser]
 gatherUsageStats = false

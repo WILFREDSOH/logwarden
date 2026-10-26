@@ -22,7 +22,7 @@ place where log data flows was treated as untrusted input.
 | CSV/formula injection when an analyst opens the export in a spreadsheet | cells starting with `= + - @` are prefixed with `'` | `test_csv_injection_is_neutralised` |
 | Secrets in logs (a client logging passwords/tokens) | configurable `redacted_fields` replaced by `[REDACTED]` before storage | `test_sensitive_fields_are_redacted` |
 | Huge or hostile files (memory exhaustion, deep JSON) | size limit (50 MB), line length limit, binary detection, `RecursionError` caught | ingestion tests |
-| Dashboard exposed on the network | binds to `127.0.0.1` only; DB opened read-only; no upload | `ss -ltn` check, read-only test |
+| Dashboard exposed on the network | binds to `127.0.0.1` only; DB opened read-only; upload only in the sandbox tab (2 MB, analysed in memory, never stored, IPs and accounts masked) | `ss -ltn` check, read-only test |
 | Unsafe model loading | ML model never serialised (no pickle) | design |
 | Corrupted or unwritable database | wrapped into a clear, localised `StorageError`; transactions roll back | storage tests |
 

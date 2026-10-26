@@ -295,6 +295,8 @@ def cmd_dashboard(args: argparse.Namespace, cfg: dict[str, Any], lang: str) -> i
         "true",
         "--browser.gatherUsageStats",
         "false",
+        "--server.maxUploadSize",
+        "2",
         "--client.toolbarMode",
         "minimal",
     ]

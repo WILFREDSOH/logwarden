@@ -23,7 +23,7 @@ tape. Tout endroit où circulent des données de journaux est traité comme une 
 | Injection de formules CSV à l'ouverture dans un tableur | cellules commençant par `= + - @` préfixées par `'` | `test_csv_injection_is_neutralised` |
 | Secrets dans les logs (client qui journalise mots de passe/jetons) | champs `redacted_fields` remplacés par `[REDACTED]` avant stockage | `test_sensitive_fields_are_redacted` |
 | Fichiers énormes ou hostiles (mémoire, JSON très imbriqué) | taille max (50 Mo), longueur de ligne max, détection des binaires, `RecursionError` gérée | tests d'importation |
-| Tableau de bord exposé sur le réseau | écoute uniquement sur `127.0.0.1` ; base ouverte en lecture seule ; pas de téléversement | vérification `ss -ltn`, test lecture seule |
+| Tableau de bord exposé sur le réseau | écoute uniquement sur `127.0.0.1` ; base ouverte en lecture seule ; envoi de fichiers uniquement dans l'onglet bas à sable (2 Mo, analyse en mémoire, rien n'est enregistré, IP et comptes masqués) | vérification `ss -ltn`, test lecture seule |
 | Chargement de modèle dangereux | modèle ML jamais sérialisé (pas de pickle) | conception |
 | Base corrompue ou non inscriptible | `StorageError` claire et traduite ; transactions annulées | tests de stockage |
 

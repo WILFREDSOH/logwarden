@@ -3,7 +3,8 @@
 Launch with `logwarden dashboard` (binds to 127.0.0.1 only).
 Security choices:
   * the database is opened read-only; the dashboard cannot modify data;
-  * no file upload: ingestion stays a deliberate CLI action;
+  * file upload only in the sandbox tab: analysed in memory, never stored,
+  2 MB maximum, IPs and accounts masked by default;
   * values coming from logs are attacker-controlled, so they are never rendered
     as Markdown/HTML (a crafted username could otherwise inject a link or an
     image that makes the browser contact an external server).
@@ -12,7 +13,8 @@ Security choices:
 from __future__ import annotations
 
 import os
-from datetime import datetime, timedelta
+import tempfile
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -25,7 +27,9 @@ from logwarden.i18n import SUPPORTED_LANGS, resolve_lang, t
 from logwarden.models import Severity
 from logwarden.reporting import charts, explain
 from logwarden.reporting.stats import summarize
+from logwarden.sandbox import analyze_upload, mask_ip, mask_params, mask_user
 from logwarden.storage import Store
+from logwarden.synth import generate
 
 LANG_NAMES = {"en": "English", "fr": "Français"}
 
@@ -278,6 +282,68 @@ def quality_tab(data: dict, lang: str) -> None:
     )
 
 
+@st.cache_data(show_spinner=False)
+def sample_files() -> dict[str, bytes]:
+    """Synthetic example files offered for download (generated, never real data)."""
+    with tempfile.TemporaryDirectory() as tmp:
+        paths, _ = generate(tmp)
+        return {p.name: p.read_bytes() for p in paths[:2]}
+
+
+def sandbox_tab(lang: str, cfg: dict) -> None:
+    st.caption(t("ui.sandbox_intro", lang))
+    st.warning(t("ui.sandbox_warning", lang))
+    samples = sample_files()
+    c = st.columns(2)
+    c[0].download_button(
+        t("ui.sandbox_download_ssh", lang), samples["auth.log"], "auth.log", "text/plain"
+    )
+    c[1].download_button(
+        t("ui.sandbox_download_web", lang),
+        samples["app_auth.jsonl"],
+        "app_auth.jsonl",
+        "text/plain",
+    )
+    upload = st.file_uploader(t("ui.sandbox_upload", lang), type=["log", "txt", "jsonl"])
+    c = st.columns(2)
+    year = c[0].number_input(t("ui.sandbox_year", lang), 2000, 2100, datetime.now(UTC).year)
+    masked = c[1].toggle(t("ui.sandbox_mask", lang), value=True)
+    if upload is None:
+        st.info(t("ui.sandbox_none", lang))
+        return
+    try:
+        result = analyze_upload(upload.name, upload.getvalue(), cfg, int(year))
+    except LogWardenError as exc:
+        st.error(md_escape(exc.localized(lang)))
+        return
+
+    m = st.columns(4)
+    m[0].metric(t("report.lines_total", lang), result.ingest.total_lines)
+    m[1].metric(t("report.events", lang), len(result.ingest.events))
+    m[2].metric(t("ui.malformed", lang), result.ingest.malformed_total)
+    m[3].metric(t("report.alerts", lang), len(result.alerts))
+    if not result.alerts:
+        st.success(t("report.no_alerts", lang))
+        return
+
+    show_ip = mask_ip if masked else (lambda v: v or "-")
+    show_user = mask_user if masked else (lambda v: v or "-")
+    rows = []
+    for a in result.alerts:
+        params = mask_params(a.explanation_params) if masked else a.explanation_params
+        rows.append(
+            {
+                t("label.severity", lang): t(f"severity.{a.severity.value}", lang),
+                t("label.score", lang): a.score,
+                t("label.rule", lang): f"{a.rule_id} {t(f'rule.{a.rule_id}.name', lang)}",
+                t("label.ip", lang): show_ip(a.src_ip),
+                t("label.user", lang): show_user(a.username),
+                t("label.explanation", lang): t(a.explanation_key, lang, **params),
+            }
+        )
+    st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
+
+
 def main() -> None:
     st.set_page_config(page_title="LogWarden", page_icon="🛡️", layout="wide")
     lang, db_path = sidebar()
@@ -297,6 +363,7 @@ def main() -> None:
             t("ui.tab_events", lang),
             t("ui.tab_ml", lang),
             t("ui.tab_quality", lang),
+            t("ui.tab_sandbox", lang),
         ]
     )
     with tabs[0]:
@@ -309,6 +376,8 @@ def main() -> None:
         anomalies_tab(data, lang, cfg["ml"]["window_minutes"])
     with tabs[4]:
         quality_tab(data, lang)
+    with tabs[5]:
+        sandbox_tab(lang, cfg)
 
 
 if __name__ == "__main__":

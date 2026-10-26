@@ -29,7 +29,7 @@ Isolation Forest flags slow attacks that stay under the rule thresholds.
 | **Explain** | each alert lists the evidence events, a sentence, the score breakdown and a recommended action, in EN or FR |
 | **Store** | SQLite: events, alerts, links alert↔events, ingestion quality, ML scores |
 | **Report** | Markdown report + PNG charts + CSV/JSON export, in both languages |
-| **Explore** | Streamlit dashboard, bilingual, read-only, bound to 127.0.0.1 |
+| **Explore** | Streamlit dashboard, bilingual, read-only, bound to 127.0.0.1, with a sandbox tab to analyse an uploaded file (in memory, masked) |
 | **Anomalies** | optional Isolation Forest per (IP, hour), evaluated honestly against the rules |
 
 ## Quick start (Linux / WSL, Python ≥ 3.11)

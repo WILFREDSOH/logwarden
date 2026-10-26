@@ -30,7 +30,7 @@ lentes qui restent sous les seuils des règles.
 | **Expliquer** | chaque alerte donne les événements de preuve, une phrase, le détail du score et une action recommandée, en FR ou EN |
 | **Stocker** | SQLite : événements, alertes, liens alerte↔événements, qualité d'importation, scores ML |
 | **Rapporter** | rapport Markdown + graphiques PNG + export CSV/JSON, dans les deux langues |
-| **Explorer** | tableau de bord Streamlit bilingue, en lecture seule, limité à 127.0.0.1 |
+| **Explorer** | tableau de bord Streamlit bilingue, en lecture seule, limité à 127.0.0.1, avec un onglet bac à sable pour analyser un fichier envoyé (en mémoire, données masquées) |
 | **Anomalies** | Isolation Forest optionnelle par (IP, heure), comparée honnêtement aux règles |
 
 ## Récupérer le projet depuis l'archive Git (Windows 11 + WSL)
