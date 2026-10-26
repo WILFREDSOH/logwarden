@@ -129,6 +129,7 @@ docs/          architecture, rules, ML, security & limitations (EN + FR), screen
 * [Anomaly detection: method, results, limits](docs/ml.md)
 * [Security considerations, limitations, improvements](docs/security-and-limitations.md)
 * [Synthetic data](data/README.md)
+* [Validation on real public SSH logs](docs/real-logs.md)
 
 ## Limitations (short)
 

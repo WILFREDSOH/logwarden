@@ -27,3 +27,6 @@ data/generated/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Third-party real logs (Loghub): used locally, never redistributed
+data/external/

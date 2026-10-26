@@ -130,6 +130,7 @@ Jeu synthétique : 5 jours ouvrés, 865 lignes → 334 événements, 4 lignes ma
 * [Sécurité, limites et améliorations](docs/fr/securite-et-limites.md)
 * [Préparation portfolio et entretiens](docs/fr/portfolio.md)
 * [Données synthétiques](data/README.md)
+* [Validation sur de vrais journaux SSH publics](docs/fr/logs-reels.md)
 
 ## Reprendre le développement
 
