@@ -20,6 +20,8 @@ lentes qui restent sous les seuils des règles.
 
 ## Tester
 
+* **Vidéo de démonstration complète (3 min, sous-titrée):** https://youtu.be/nj98nYHmPRg,
+
 * **Démo en ligne** (sans installation) : https://logwarden-wilfredsoh.streamlit.app
 * **Dans le navigateur avec GitHub Codespaces** : [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/WILFREDSOH/logwarden)
   L'environnement s'installe seul et lance la démo ; tape ensuite `logwarden dashboard` dans son terminal.
