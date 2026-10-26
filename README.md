@@ -1,5 +1,8 @@
 # LogWarden
 
+[![CI](https://github.com/WILFREDSOH/logwarden/actions/workflows/ci.yml/badge.svg)](https://github.com/WILFREDSOH/logwarden/actions/workflows/ci.yml)
+![Coverage](https://img.shields.io/badge/coverage-87%25-brightgreen)
+![Python](https://img.shields.io/badge/python-3.11%20|%203.12%20|%203.13-blue)
 *Version française : [README.fr.md](README.fr.md)*
 
 **Local, explainable detection of suspicious authentication activity in Linux/SSH and web

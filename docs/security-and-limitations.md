@@ -59,4 +59,4 @@ the logs and must be protected like the logs themselves.
 5. Alert lifecycle in the dashboard (acknowledged / false positive), which would require write
    access and authentication.
 6. Evaluate on a public labelled dataset whose licence allows it.
-7. `pip-audit` and `bandit` in CI.
+

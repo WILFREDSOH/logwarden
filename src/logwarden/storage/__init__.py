@@ -264,7 +264,8 @@ class Store:
         for start in range(0, len(ids), 500):  # stay under SQLite's variable limit
             chunk = ids[start : start + 500]
             marks = ",".join("?" * len(chunk))
-            sql = f"SELECT * FROM events WHERE event_id IN ({marks}) ORDER BY ts"  # noqa: S608 - only '?' placeholders
+            # only '?' placeholders are interpolated; the ids are passed as parameters
+            sql = f"SELECT * FROM events WHERE event_id IN ({marks}) ORDER BY ts"  # noqa: S608  # nosec B608
             found.extend(_row_to_event(r) for r in self._query(sql, tuple(chunk)))
         return sorted(found, key=lambda e: (e.timestamp, e.event_id))
 

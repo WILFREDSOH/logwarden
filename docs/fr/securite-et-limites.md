@@ -61,4 +61,4 @@ et IP issus des logs et doivent être protégés comme les logs eux-mêmes.
 5. Cycle de vie des alertes dans le tableau de bord (prise en compte, faux positif), ce qui
    imposerait un accès en écriture et une authentification.
 6. Évaluation sur un jeu public étiqueté dont la licence le permet.
-7. `pip-audit` et `bandit` dans l'intégration continue.
+
