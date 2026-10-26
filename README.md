@@ -13,6 +13,8 @@ Isolation Forest flags slow attacks that stay under the rule thresholds.
 
 > Defensive, educational project  All demo data is synthetic.
 
+![LogWarden demo: sandbox upload detecting a distributed attack (LW-006)](docs/images/demo.gif)
+
 ![Dashboard - alert details](docs/images/dashboard-alerts-en.png)
 
 ## Try it

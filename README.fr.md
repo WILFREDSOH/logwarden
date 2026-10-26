@@ -14,6 +14,8 @@ lentes qui restent sous les seuils des règles.
 
 > Projet défensif et pédagogique,  Toutes les données de démonstration sont synthétiques.
 
+![Démonstration : le bac à sable détecte une attaque distribuée (LW-006)](docs/images/demo.gif)
+
 ![Tableau de bord - détail d'une alerte](docs/images/dashboard-alerts-fr.png)
 
 ## Tester
