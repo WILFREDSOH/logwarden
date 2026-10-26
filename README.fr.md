@@ -7,7 +7,7 @@
 
 **Détection locale et explicable d'activités d'authentification suspectes dans des journaux
 Linux/SSH et d'application web.** LogWarden importe des journaux, les convertit dans un format
-d'événement commun, applique cinq règles de détection transparentes, attribue à chaque alerte un
+d'événement commun, applique six règles de détection transparentes, attribue à chaque alerte un
 score de 0 à 100, l'explique en français ou en anglais, stocke le tout dans SQLite et produit un
 rapport ainsi qu'un tableau de bord local. Une Isolation Forest optionnelle signale les attaques
 lentes qui restent sous les seuils des règles.
@@ -28,7 +28,7 @@ lentes qui restent sous les seuils des règles.
 | Étape | Détail |
 |---|---|
 | **Importer** | messages OpenSSH d'`auth.log` (horodatages classiques et RFC 3339) et journal JSON Lines d'une application web. Les lignes invalides sont comptées avec leur motif, jamais ignorées en silence ; les doublons sont écartés ; les secrets (`password`, `token`…) sont masqués. |
-| **Détecter** | LW-001 force brute · LW-002 pulvérisation de mots de passe · LW-003 succès après échecs · LW-004 connexion hors horaires · LW-005 IP suspecte (corrélation) · LW-006 attaque distribuée |
+| **Détecter** | LW-001 force brute · LW-002 pulvérisation de mots de passe · LW-003 succès après échecs · LW-004 connexion hors horaires · LW-005 IP suspecte (corrélation) · LW-006 attaque distribuée · LW-006 attaque distribuée |
 | **Évaluer le risque** | score additif et explicable : base de la règle + compte privilégié + connexion réussie + volume → faible / moyenne / élevée / critique |
 | **Expliquer** | chaque alerte donne les événements de preuve, une phrase, le détail du score et une action recommandée, en FR ou EN |
 | **Stocker** | SQLite : événements, alertes, liens alerte↔événements, qualité d'importation, scores ML |
@@ -64,7 +64,7 @@ pip install -e ".[all]"          # cœur + ML + tableau de bord + outils de test
 
 logwarden demo --lang fr         # génère les données, importe, détecte, ML, rapports (FR + EN)
 logwarden dashboard --lang fr    # ouvre http://127.0.0.1:8501 dans le navigateur Windows
-pytest                           # 376 tests
+pytest                           # 419 tests
 ```
 
 WSL2 relaie automatiquement `localhost` vers Windows : ouvre simplement
@@ -116,14 +116,14 @@ Jeu synthétique : 5 jours ouvrés, 865 lignes → 334 événements, 4 lignes ma
 
 ## Qualité
 
-* **376 tests automatisés** (pytest) : parseurs et entrées mal formées, fichiers vides / binaires /
+* **419 tests automatisés** (pytest) : parseurs et entrées mal formées, fichiers vides / binaires /
   trop gros, horodatages invalides, changement d'année, doublons, chaque règle (cas positif,
   négatif, limite), bornes de sévérité, validation de la configuration, erreurs SQLite (base
   corrompue, lecture seule, annulation de transaction), complétude des traductions, injections
   CSV/Markdown, déterminisme du ML, démo de bout en bout, codes de sortie de la CLI, et tableau de
   bord exécuté sans navigateur avec `AppTest` de Streamlit dans les deux langues.
 * Vérifié sous Python 3.11, 3.12 et 3.13 depuis un clone propre ; `ruff` sans erreur.
-* Intégration continue GitHub Actions prête (`.github/workflows/ci.yml`), active dès la publication.
+* Intégration continue GitHub Actions : lint, tests avec seuil de couverture, bandit et pip-audit à chaque push.
 
 ## Documentation
 
@@ -134,6 +134,7 @@ Jeu synthétique : 5 jours ouvrés, 865 lignes → 334 événements, 4 lignes ma
 * [Préparation portfolio et entretiens](docs/fr/portfolio.md)
 * [Données synthétiques](data/README.md)
 * [Validation sur de vrais journaux SSH publics](docs/fr/logs-reels.md)
+* [Changelog](CHANGELOG.md)
 
 ## Reprendre le développement
 

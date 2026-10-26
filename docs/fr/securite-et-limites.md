@@ -42,7 +42,7 @@ et IP issus des logs et doivent être protégés comme les logs eux-mêmes.
   JSON sans fuseau sont lus en UTC.
 * **Dédoublonnage par contenu** : deux événements réellement distincts produisant des lignes
   identiques au même horodatage sont comptés une fois.
-* **Règles par IP** : une attaque répartie sur de nombreuses IP (botnet) échappe à LW-001/LW-002 ;
+* **Règles par IP** : LW-006 couvre désormais le cas de nombreuses IP visant un même compte.
   un attaquant derrière une IP partagée (NAT, proxy) peut provoquer des faux positifs.
 * **Pas de liste blanche ni de renseignement sur les menaces** : pas de GeoIP ni de réputation
   (il faudrait un service externe).
@@ -57,8 +57,7 @@ et IP issus des logs et doivent être protégés comme les logs eux-mêmes.
    Windows (export JSON d'EVTX).
 2. Export des alertes dans un format standard (ECS, règles de type Sigma, syslog/CEF vers un SIEM).
 3. Profils par utilisateur (IP et horaires habituels) pour réduire les faux positifs de LW-004.
-4. Règle d'attaque distribuée : nombreuses IP visant le même compte.
-5. Cycle de vie des alertes dans le tableau de bord (prise en compte, faux positif), ce qui
+4. Cycle de vie des alertes dans le tableau de bord (prise en compte, faux positif), ce qui
    imposerait un accès en écriture et une authentification.
-6. Évaluation sur un jeu public étiqueté dont la licence le permet.
+5. Évaluation sur un jeu public étiqueté dont la licence le permet.
 

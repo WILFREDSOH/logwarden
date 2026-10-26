@@ -39,7 +39,7 @@ flowchart LR
 | `cli.py` | commande `logwarden` : `demo`, `ingest`, `detect`, `anomalies`, `report`, `alerts`, `dashboard`, `generate` | tout |
 
 Les règles ne font aucune entrée/sortie : elles reçoivent une liste triée d'événements et
-renvoient des alertes. C'est ce qui permet de tester chaque règle avec cinq événements écrits à la main.
+renvoient des alertes. C'est ce qui permet de tester chaque règle avec six événements écrits à la main.
 
 ## Modèle de données
 

@@ -27,7 +27,7 @@ Isolation Forest flags slow attacks that stay under the rule thresholds.
 | Step | Detail |
 |---|---|
 | **Ingest** | OpenSSH messages from `auth.log` (classic and RFC 3339 timestamps) and a JSON Lines web-app log. Bad lines are counted with a reason, never silently dropped; duplicates are ignored; secrets (`password`, `token`…) are redacted. |
-| **Detect** | LW-001 brute force · LW-002 password spraying · LW-003 success after failures · LW-004 off-hours login ·LW-005 suspicious IP (correlation) · LW-006 distributed attack |
+| **Detect** | LW-001 brute force · LW-002 password spraying · LW-003 success after failures · LW-004 off-hours login ·LW-005 suspicious IP (correlation) · LW-006 distributed attack · LW-006 distributed attack|
 | **Score** | additive and explainable: rule base + privileged account + successful login + volume → low / medium / high / critical |
 | **Explain** | each alert lists the evidence events, a sentence, the score breakdown and a recommended action, in EN or FR |
 | **Store** | SQLite: events, alerts, links alert↔events, ingestion quality, ML scores |
@@ -47,7 +47,7 @@ pip install -e ".[all]"          # core + ML + dashboard + test tools
 
 logwarden demo                   # generate data, ingest, detect, ML, reports (EN + FR)
 logwarden dashboard              # http://127.0.0.1:8501 (Ctrl+C to stop)
-pytest                           # 376 tests
+pytest                           # 419 tests
 ```
 
 For the exact versions that were tested: `pip install -r requirements-lock.txt && pip install -e . --no-deps`.
@@ -89,7 +89,7 @@ Synthetic dataset: 5 working days, 865 log lines → 334 events, 4 malformed lin
 * The low-and-slow attack (31 failures in 3 h) triggers **no rule**; the Isolation Forest flags its
   3 windows. Window-level comparison: rules precision 100 % / recall 57 %, ML 86 % / 86 %,
   combined 88 % / 100 %.
-* ⚠️ These numbers only show that LogWarden finds attacks injected into data generated for that
+*  These numbers only show that LogWarden finds attacks injected into data generated for that
   purpose. They are regression tests, **not** real-world performance. See [docs/ml.md](docs/ml.md).
 
 Example explanation (alert 1):
@@ -99,13 +99,13 @@ Example explanation (alert 1):
 
 ## Quality
 
-* **376 automated tests** (pytest): parsers and malformed input, empty/binary/oversized files,
+* **419 automated tests** (pytest): parsers and malformed input, empty/binary/oversized files,
   bad timestamps, year rollover, duplicates, each rule (positive / negative / boundary cases),
   scoring bands, config validation, SQLite errors (corrupted, read-only, rollback), i18n
   completeness, CSV/Markdown injection, ML determinism, end-to-end demo, CLI exit codes, and the
   dashboard rendered headlessly with Streamlit `AppTest` in both languages.
 * Verified on Python 3.11, 3.12 and 3.13 from a fresh clone; `ruff` lint + format clean.
-* GitHub Actions workflow ready in `.github/workflows/ci.yml` (runs once the repo is published).
+* GitHub Actions CI: lint, tests with coverage threshold, bandit and pip-audit on every push.
 
 ## Project layout
 
@@ -133,10 +133,11 @@ docs/          architecture, rules, ML, security & limitations (EN + FR), screen
 * [Security considerations, limitations, improvements](docs/security-and-limitations.md)
 * [Synthetic data](data/README.md)
 * [Validation on real public SSH logs](docs/real-logs.md)
+* [Changelog](CHANGELOG.md)
 
 ## Limitations (short)
 
-Two log formats only, batch processing, per-IP rules (distributed attacks are missed), generic
+Two log formats only, batch processing, per-IP rules, plus LW-006 for attacks spread over many IPs, generic
 thresholds, evaluation on synthetic data only, single-user local dashboard.
 Details: [docs/security-and-limitations.md](docs/security-and-limitations.md).
 

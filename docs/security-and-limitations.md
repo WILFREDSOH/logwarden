@@ -55,8 +55,7 @@ the logs and must be protected like the logs themselves.
    a JSON export).
 2. Export alerts in a standard format (ECS / Sigma-like rule definitions, syslog/CEF to a SIEM).
 3. Per-user baselines (usual IPs, usual hours) to reduce LW-004 false positives.
-4. Distributed-attack rule: many IPs targeting the same account.
-5. Alert lifecycle in the dashboard (acknowledged / false positive), which would require write
+4. Alert lifecycle in the dashboard (acknowledged / false positive), which would require write
    access and authentication.
-6. Evaluate on a public labelled dataset whose licence allows it.
+5. Evaluate on a public labelled dataset whose licence allows it.
 

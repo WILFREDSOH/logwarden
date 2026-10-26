@@ -39,7 +39,7 @@ flowchart LR
 | `cli.py` | `logwarden` command: `demo`, `ingest`, `detect`, `anomalies`, `report`, `alerts`, `dashboard`, `generate` | everything |
 
 Rules never do I/O: they receive a sorted list of events and return alerts. This is what makes
-each rule testable on five hand-written events.
+each rule testable on six hand-written events.
 
 ## Data model
 
